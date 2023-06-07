@@ -32,3 +32,9 @@ li {
 a {
     text-decoration: none;
 }
+
+/* Body */
+body {
+	background: url('../images/bg.png') no-repeat;
+	background-size: cover;
+}
