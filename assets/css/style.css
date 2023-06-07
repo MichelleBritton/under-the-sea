@@ -34,12 +34,18 @@ a {
 }
 
 /* Headings */
+h1, h2 {
+    color: #3d6892;
+    font: 600 800%  'Atma', cursive;
+    line-height: 1;
+    margin: 0 0 30px;
+}
 h1 {
-	color: #3d6892;
-	font: 600 800%  'Atma', cursive;
-	line-height: 1;
-	margin: 0;
+    margin: 0;
 	text-shadow: 0px 5px 2px rgba(0,0,0,0.7);
+}
+h2 {
+    font-size: 300%;
 }
 
 /* Body */
@@ -52,4 +58,44 @@ body {
 header {
 	padding: 1.5% 2.5%;
 	text-align: center;
+}
+
+/* Main Panel */
+#main-panel {
+	padding: 0 2.5%;
+	text-align: center;
+}
+
+/* Welcome Panel */
+#welcome-panel { 
+	background: url('../images/instructions-bg.png') no-repeat;
+	background-size: 100%;	
+	margin: 5% auto 0;
+	padding: 5% 10% 7%;
+	width: 75%;
+}
+#welcome-panel h2 {
+	font-size: 400%;
+}
+#welcome-panel p:last-of-type {
+	margin-bottom: 50px;
+}
+label {
+	color: #3d6892;
+	font: 600 180% 'Atma', cursive;
+}
+input {
+	margin: 0 50px 0 10px;
+	padding: 10px;
+}
+button {
+	background: #63b08c;
+	border-radius: 20px;
+	cursor: pointer;
+	font: 600 180% 'Atma', cursive;
+	padding: 10px 30px;
+}
+button:hover {
+	background: #3d6892;
+	color: #f5df8c;
 }
