@@ -34,7 +34,7 @@ a {
 }
 
 /* Headings */
-h1, h2 {
+h1, h2, h3 {
     color: #3d6892;
     font: 600 800%  'Atma', cursive;
     line-height: 1;
@@ -46,6 +46,12 @@ h1 {
 }
 h2 {
     font-size: 300%;
+}
+#score-board h2 {
+	color: #fff;
+}
+h3 {
+    font-size: 250%;
 }
 
 /* Body */
@@ -98,4 +104,21 @@ button {
 button:hover {
 	background: #3d6892;
 	color: #f5df8c;
+}
+
+/* Score Board */
+#score-board {
+	background: url('../images/score-bg.png') no-repeat;
+	background-size: 100%;
+	padding: 1.5% 0;
+	position: absolute;
+	right: 2.5%;
+	text-align: center;
+	top: 20px;
+	width: 20%;
+}
+#score-board h3 span {
+	color: #fff;
+	display: inline-block;
+	margin-left: 10px;
 }
