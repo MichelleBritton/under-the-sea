@@ -110,7 +110,7 @@ button:hover {
 #score-board {
 	background: url('../images/score-bg.png') no-repeat;
 	background-size: 100%;
-	padding: 1.5% 0;
+	padding: 2% 0;
 	position: absolute;
 	right: 2.5%;
 	text-align: center;
