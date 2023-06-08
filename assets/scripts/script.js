@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	let button = document.getElementById('btn');
 	
 	button.addEventListener("click", function() {
-		if (validateInput()) {
+		if (validateInput() != false) {
 			startGame();	
 		}
 	})	
