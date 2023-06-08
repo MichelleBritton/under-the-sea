@@ -40,54 +40,66 @@ function validateInput() {
 /**
  * Create an array of objects to add images.  Clone the array and then join them together to create pairs of cards
  */
-function getCards() {
+let originalCards = [
+    {
+        front: '../images/angelfish.png',
+        back: './images/back.png',
+    },
+    {
+        front: '../images/clownfish.png',
+        back: './images/back.png',
+    },
+    {
+        front: '../images/crab.png',
+        back: './images/back.png',
+    },
+    {
+        front: '../images/jellyfish.png',
+        back: './images/back.png',
+    },
+    {
+        front: '../images/octopus.png',
+        back: './images/back.png',
+    },
+    {
+        front: '../images/seahorse.png',
+        back: './images/back.png',
+    },
+    {
+        front: '../images/shark.png',
+        back: './images/back.png',
+    },
+    {
+        front: '../images/starfish.png',
+        back: './images/back.png',
+    },
+    {
+        front: '../images/turtle.png',
+        back: './images/back.png',
+    },
+    {
+        front: '../images/whale.png',
+        back: './images/back.png',
+    },
+];
 
-	let originalCards = [
-		{
-			front: '../images/angelfish.png',
-			back: './images/back.png',
-		},
-		{
-			front: '../images/clownfish.png',
-			back: './images/back.png',
-		},
-		{
-			front: '../images/crab.png',
-			back: './images/back.png',
-		},
-		{
-			front: '../images/jellyfish.png',
-			back: './images/back.png',
-		},
-		{
-			front: '../images/octopus.png',
-			back: './images/back.png',
-		},
-		{
-			front: '../images/seahorse.png',
-			back: './images/back.png',
-		},
-		{
-			front: '../images/shark.png',
-			back: './images/back.png',
-		},
-		{
-			front: '../images/starfish.png',
-			back: './images/back.png',
-		},
-		{
-			front: '../images/turtle.png',
-			back: './images/back.png',
-		},
-		{
-			front: '../images/whale.png',
-			back: './images/back.png',
-		},
-	];
+let clonedCards = originalCards.slice(0);
+let cards = originalCards.concat(clonedCards);
 
-	let clonedCards = originalCards.slice(0);
-	let cards = originalCards.concat(clonedCards);
-
+/**
+ * Shuffle the cards array
+ * Code Credit: https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array
+ * Fisher-Yates shuffle algorithm
+ */
+function shuffle(a) {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+        j = Math.floor(Math.random() * (i + 1));
+        x = a[i];
+        a[i] = a[j];
+        a[j] = x;
+    }
+    return a;
 }
 
 /**
