@@ -113,12 +113,12 @@ function createGrid() {
 		let item = `
 			<div class="card">
   				<div class="card-inner">
-    				<div class="card-front">
-                		<img src="${card.front}">
-                	</div>
-                	<div class="card-back">
-                		<img src="${card.back}">
-                	</div>
+                  <div class="card-front">
+                  <img src="${card.back}">
+              </div>
+              <div class="card-back">
+                  <img src="${card.front}">
+              </div>
                 </div>
             </div>
 		`;
