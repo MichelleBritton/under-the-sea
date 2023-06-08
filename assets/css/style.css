@@ -111,6 +111,52 @@ button:hover {
 	color: #f5df8c;
 }
 
+/* Grid */
+#grid { 
+	width: 100%;
+}
+.cards-container {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 60%;
+}
+/* Credit: https://www.w3schools.com/howto/howto_css_flip_card.asp */
+.card {
+	background-color: transparent;
+	float: left;
+	height: 200px;
+	margin: 0 1% 2% 1%;
+	width: 18%;  
+	perspective: 1000px;
+}
+.card-inner {
+	height: 100%;
+	position: relative;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	width: 100%;
+}
+.card:hover .card-inner {
+	transform: rotateY(180deg);
+}
+.card-front, .card-back {
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden; /* Safari */
+	height: 100%;
+	position: absolute;
+	width: 100%;  
+}
+.card-back {
+	transform: rotateY(180deg);
+}
+.card-front img, .card-back img {
+	border: 1px solid #f1f1f1;
+	border-radius: 20px;
+	max-height: 200px;
+	width: auto;
+}
+
 /* Score Board */
 #score-board {
 	background: url('../images/score-bg.png') no-repeat;
