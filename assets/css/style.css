@@ -51,7 +51,7 @@ h2 {
 	color: #fff;
 }
 h3 {
-    font-size: 250%;
+    font-size: 200%;
 }
 
 /* Body */
@@ -117,7 +117,7 @@ button:hover {
 	top: 20px;
 	width: 20%;
 }
-#score-board h3 span {
+#score-board h3 span:last-of-type {
 	color: #fff;
 	display: inline-block;
 	margin-left: 10px;
