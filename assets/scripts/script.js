@@ -11,3 +11,28 @@ document.addEventListener("DOMContentLoaded", function() {
 	})	
 	
 })
+
+/**
+ * Ensure that both fields are filled out and assign names to the scoreboard
+ */
+function validateInput() {
+
+	let firstPlayer = document.getElementById('player-one').value;
+ 	let secondPlayer = document.getElementById('player-two').value;
+
+	if (firstPlayer === "" || secondPlayer === "") {
+ 		
+ 		alert("Please fill in both fields");
+ 		return false;
+
+ 	} else {
+
+ 		let firstPlayerName = document.getElementById('player-one-name');
+ 		let secondPlayerName = document.getElementById('player-two-name');
+
+ 		firstPlayerName.innerHTML = firstPlayer;
+ 		secondPlayerName.innerHTML = secondPlayer;
+
+ 	}
+
+}
