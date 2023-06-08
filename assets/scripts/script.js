@@ -151,6 +151,7 @@ function startGame() {
 
     setTimeout(function() {
     	document.getElementById('grid').classList.remove("hide");
+    	document.getElementById('new-game').classList.remove("hide");
     }, 500);
 }
 
