@@ -37,9 +37,7 @@ function validateInput() {
 
 }
 
-/**
- * Create an array of objects to add images.  Clone the array and then join them together to create pairs of cards
- */
+// Create an array of objects to add images.  Clone the array and then join them together to create pairs of cards
 let originalCards = [
     {
         front: '../images/angelfish.png',
