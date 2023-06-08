@@ -145,4 +145,7 @@ function startGame() {
     }, 75);
 
     shuffle(cards);
+
+    let grid = createGrid();
+	document.getElementById('grid').innerHTML = grid;
 }
