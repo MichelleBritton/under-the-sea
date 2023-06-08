@@ -36,3 +36,14 @@ function validateInput() {
  	}
 
 }
+
+function startGame() {	
+
+    let welcome = document.getElementById("welcome-panel");
+    welcome.classList.add("hide");
+
+    setTimeout(function() {
+    	welcome.style.display = "none";
+    }, 75);
+
+}
