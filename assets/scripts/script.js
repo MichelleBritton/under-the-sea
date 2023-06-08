@@ -112,4 +112,5 @@ function startGame() {
     	welcome.style.display = "none";
     }, 75);
 
+    shuffle(cards);
 }
