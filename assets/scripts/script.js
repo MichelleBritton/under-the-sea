@@ -40,45 +40,45 @@ function validateInput() {
 // Create an array of objects to add images.  Clone the array and then join them together to create pairs of cards
 let originalCards = [
     {
-        front: '../images/angelfish.png',
-        back: './images/back.png',
-    },
-    {
-        front: '../images/clownfish.png',
-        back: './images/back.png',
-    },
-    {
-        front: '../images/crab.png',
-        back: './images/back.png',
-    },
-    {
-        front: '../images/jellyfish.png',
-        back: './images/back.png',
-    },
-    {
-        front: '../images/octopus.png',
-        back: './images/back.png',
-    },
-    {
-        front: '../images/seahorse.png',
-        back: './images/back.png',
-    },
-    {
-        front: '../images/shark.png',
-        back: './images/back.png',
-    },
-    {
-        front: '../images/starfish.png',
-        back: './images/back.png',
-    },
-    {
-        front: '../images/turtle.png',
-        back: './images/back.png',
-    },
-    {
-        front: '../images/whale.png',
-        back: './images/back.png',
-    },
+		front: 'assets/images/angelfish.png',
+		back: 'assets/images/back.png',
+	},
+	{
+		front: 'assets/images/clownfish.png',
+		back: 'assets/images/back.png',
+	},
+	{
+		front: 'assets/images/crab.png',
+		back: 'assets/images/back.png',
+	},
+	{
+		front: 'assets/images/jellyfish.png',
+		back: 'assets/images/back.png',
+	},
+	{
+		front: 'assets/images/octopus.png',
+		back: 'assets/images/back.png',
+	},
+	{
+		front: 'assets/images/seahorse.png',
+		back: 'assets/images/back.png',
+	},
+	{
+		front: 'assets/images/shark.png',
+		back: 'assets/images/back.png',
+	},
+	{
+		front: 'assets/images/starfish.png',
+		back: 'assets/images/back.png',
+	},
+	{
+		front: 'assets/images/turtle.png',
+		back: 'assets/images/back.png',
+	},
+	{
+		front: 'assets/images/whale.png',
+		back: 'assets/images/back.png',
+	},
 ];
 
 let clonedCards = originalCards.slice(0);
