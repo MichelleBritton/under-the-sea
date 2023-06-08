@@ -101,6 +101,38 @@ function shuffle(a) {
 }
 
 /**
+ * Create HTML Grid and populate it with data from the shuffled array
+ */
+function createGrid() {
+
+	let html = `
+		<div class="cards-container">
+	`;
+
+	for (card of cards) {
+		let item = `
+			<div class="card">
+  				<div class="card-inner">
+    				<div class="card-front">
+                		<img src="${card.front}">
+                	</div>
+                	<div class="card-back">
+                		<img src="${card.back}">
+                	</div>
+                </div>
+            </div>
+		`;
+		var result = html += item;
+	}
+	return result;
+
+	html =+ `
+		</div>
+	`;
+	
+}
+
+/**
  * Hide Welcome Panel when start button is pressed and display grid
  * */
 function startGame() {	
