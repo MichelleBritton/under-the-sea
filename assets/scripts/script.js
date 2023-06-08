@@ -148,4 +148,8 @@ function startGame() {
 
     let grid = createGrid();
 	document.getElementById('grid').innerHTML = grid;
+
+    setTimeout(function() {
+    	document.getElementById('grid').classList.remove("hide");
+    }, 500);
 }
