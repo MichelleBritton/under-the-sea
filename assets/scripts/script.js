@@ -37,6 +37,9 @@ function validateInput() {
 
 }
 
+/**
+ * Hide Welcome Panel when start button is pressed and display grid
+ * */
 function startGame() {	
 
     let welcome = document.getElementById("welcome-panel");
