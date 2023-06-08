@@ -153,3 +153,26 @@ function startGame() {
     	document.getElementById('grid').classList.remove("hide");
     }, 500);
 }
+
+/**
+ * Resets the game by hiding the grid, shuffling the cards and revealing the grid again
+ */
+let newGame = document.getElementById("new-game");
+newGame.addEventListener('click', resetGame);
+
+function resetGame (event) {
+
+	document.getElementById('grid').classList.add("hide");
+	document.getElementById('new-game').classList.add("hide");
+
+	shuffle(cards);
+
+	let grid = createGrid();
+	document.getElementById('grid').innerHTML = grid;
+
+	setTimeout(function() {
+    	document.getElementById('grid').classList.remove("hide");
+    	document.getElementById('new-game').classList.remove("hide");
+    }, 500);
+
+}
