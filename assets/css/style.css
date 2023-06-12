@@ -83,7 +83,7 @@ header {
 }
 #welcome-panel.hide {
 	scale: 0;
-	transition: all .3s;
+	transition: all .6s;
 }
 #welcome-panel h2 {
 	font-size: 400%;
