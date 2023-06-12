@@ -132,6 +132,18 @@ function createGrid() {
 	
 }
 
+/** 
+ * Shuffle the cards and add the grid
+ */
+function addGrid() {
+
+	shuffle(cards);
+
+	let grid = createGrid();
+	document.getElementById('grid').innerHTML = grid;
+
+}
+
 /**
  * Hide Welcome Panel when start button is pressed and display grid
  * */
@@ -144,10 +156,8 @@ function startGame() {
     	welcome.style.display = "none";
     }, 75);
 
-    shuffle(cards);
-
-    let grid = createGrid();
-	document.getElementById('grid').innerHTML = grid;
+    // Create the grid 
+	addGrid();
 
     setTimeout(function() {
     	document.getElementById('grid').classList.remove("hide");
@@ -166,10 +176,8 @@ function resetGame (event) {
 	document.getElementById('grid').classList.add("hide");
 	document.getElementById('new-game').classList.add("hide");
 
-	shuffle(cards);
-
-	let grid = createGrid();
-	document.getElementById('grid').innerHTML = grid;
+	// Create a new grid
+	addGrid();
 
 	setTimeout(function() {
     	document.getElementById('grid').classList.remove("hide");
