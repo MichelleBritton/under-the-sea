@@ -176,12 +176,14 @@ newGame.addEventListener('click', resetGame);
 
 function resetGame (event) {
 
+	// Hide the grid
 	document.getElementById('grid').classList.add("hide");
 	document.getElementById('new-game').classList.add("hide");
 
 	// Create a new grid
 	addGrid();
 
+	//Set the grid to appear after 500ms to allow time for grid transitions to run
 	setTimeout(function() {
     	document.getElementById('grid').classList.remove("hide");
     	document.getElementById('new-game').classList.remove("hide");
