@@ -152,6 +152,7 @@ function startGame() {
     let welcome = document.getElementById("welcome-panel");
     welcome.classList.add("hide");
 
+	//Set the welcome-panel to display none after 125ms to give the scale transition time to run first
     setTimeout(function() {
     	welcome.style.display = "none";
     }, 75);
@@ -159,6 +160,8 @@ function startGame() {
     // Create the grid 
 	addGrid();
 
+	/* Set the grid to appear after 500ms to give the welcome panel enough time to transition and display: none
+	and allow time for grid transitions to run */
     setTimeout(function() {
     	document.getElementById('grid').classList.remove("hide");
     	document.getElementById('new-game').classList.remove("hide");
