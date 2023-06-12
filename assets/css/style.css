@@ -133,6 +133,7 @@ button:hover {
 /* Credit: https://www.w3schools.com/howto/howto_css_flip_card.asp */
 .card {
 	background-color: transparent;
+	cursor: pointer;
 	float: left;
 	height: 200px;
 	margin: 0 1% 2% 1%;
