@@ -251,7 +251,6 @@ function matchCards() {
 	counter ++;
 	getCurrentPlayer();
 	return;
-	flipCards();
 }
 
 /**
@@ -270,5 +269,6 @@ function resetGame (event) {
 	pickedCards = [];
 	cardClicks = 0;
 	counter = 0;
+	getCurrentPlayer();
 	runGame();
 }
