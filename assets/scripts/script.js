@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function() {
 		if (validateInput() != false) {
 			startGame();	
 		}
-	})	
+	});	
 	
-})
+});
 
 /**
  * Ensure that both fields are filled out and assign names to the scoreboard
@@ -124,7 +124,7 @@ function createGrid() {
 		<div class="cards-container">
 	`;
 
-	for (card of cards) {
+	for (let card of cards) {
 		let item = `
 			<div class="card" data-type="${card.fish}">
   				<div class="card-inner">
@@ -193,6 +193,7 @@ function runGame() {
 
 const turnCards = document.getElementsByClassName("card");
 let cardClicks = 0;
+let data;
 let pickedCards = [];
 
 function flipCards() {	
@@ -205,15 +206,15 @@ function flipCards() {
 			if (cardClicks <= 2) {
 				while (cardClicks) {	
 					this.classList.add("flipActive");
-					let data = this.getAttribute("data-type");
-					pickedCards.push(data);	
+					data = this.getAttribute("data-type");					
 					break;
 				} 
+				pickedCards.push(data);	
 			} else {				
 				matchCards();											
 			}
 			
-		})		
+		});		
 	}	
 
 }
