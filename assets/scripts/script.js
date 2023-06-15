@@ -87,7 +87,7 @@ let originalCards = [
 ];
 
 let clonedCards = originalCards.slice(0);
-let cards = originalCards.concat(clonedCards);
+const cards = originalCards.concat(clonedCards);
 
 /**
  * Shuffle the cards array
