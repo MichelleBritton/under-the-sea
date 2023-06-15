@@ -193,10 +193,6 @@ function startGame() {
 	flipCards();
 }
 
-// function runGame() {	
-// 	flipCards();
-// }
-
 /**
  * Get the current player
  * Code credit: https://github.com/adriane26/theGame/blob/master/memory.js
@@ -253,7 +249,6 @@ function flipCards() {
 }
 
 function matchCards() {
-	console.log(pickedCards);	
 	const activeCards = document.querySelectorAll(".flipActive");		
 
 	if (pickedCards[0] === pickedCards[1]) {
@@ -276,6 +271,8 @@ function matchCards() {
 	return;
 }
 
+
+
 /**
  * Resets the game by hiding the grid, shuffling the cards and revealing the grid again
  */
@@ -289,11 +286,14 @@ function resetGame (event) {
 	// Create a new grid
 	addGrid();
 	
+	//Reset array, counter, player and score
 	pickedCards = [];
 	cardClicks = 0;
 	counter = 0;
 	getCurrentPlayer();
 	resetScore();
+
+	// Start playing again
 	flipCards();	
 	return;
 }
