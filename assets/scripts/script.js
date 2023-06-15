@@ -168,6 +168,12 @@ function startGame() {
     }, 500);
 }
 
+function runGame() {
+
+	flipCards();
+
+}
+
 /**
  * Resets the game by hiding the grid, shuffling the cards and revealing the grid again
  */
