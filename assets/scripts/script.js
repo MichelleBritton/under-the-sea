@@ -1,18 +1,22 @@
 // Declare Variables
+const welcome = document.getElementById("welcome-panel");
+const turnCards = document.getElementsByClassName("card");
+const newGame = document.getElementById("new-game");
+const playerOneHtml = document.getElementById("player-one-score");
+const playerTwoHtml = document.getElementById("player-two-score");
+let player = document.getElementById("player");
 let firstPlayer;
 let secondPlayer;
 let firstPlayerName;
 let secondPlayerName;
-const welcome = document.getElementById("welcome-panel");
-const turnCards = document.getElementsByClassName("card");
-const newGame = document.getElementById("new-game");
-let player = document.getElementById("player");
-let counter = 0;
-let score = 0;
+let playerOneScore = 0;
+let playerTwoScore = 0;
 let playerId;
+let counter = 0;
 let cardClicks = 0;
 let data;
 let pickedCards = [];
+let currentPlayer = getCurrentPlayer();
 
 
 
@@ -205,6 +209,7 @@ function getCurrentPlayer() {
 		playerId = 2;
 		player.innerHTML = secondPlayer;
 	}
+	return;
 }
 
 function flipCards() {			
@@ -243,11 +248,9 @@ function matchCards() {
 		}
 
 		if (playerId === 1) {
-			let playerOneScore = document.getElementById("player-one-score");
-			playerOneScore.innerHTML = score+=1;
+			playerOneHtml.innerHTML = ++playerOneScore;
 		} else {
-			let playerTwoScore = document.getElementById("player-two-score");
-			playerTwoScore.innerHTML = score+=1;
+			playerTwoHtml.innerHTML = ++playerTwoScore; 
 		}
 	} else {
 		alert("NO");	
@@ -279,7 +282,9 @@ function resetGame (event) {
 	pickedCards = [];
 	cardClicks = 0;
 	counter = 0;
-	score = 0;
+	playerOneScore = 0;
+	playerTwoScore = 0;
 	getCurrentPlayer();
 	runGame();
+	return;
 }
