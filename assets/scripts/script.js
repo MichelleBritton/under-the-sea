@@ -190,12 +190,12 @@ function startGame() {
     // Create the grid 
 	addGrid();
 
-	runGame();
-}
-
-function runGame() {	
 	flipCards();
 }
+
+// function runGame() {	
+// 	flipCards();
+// }
 
 /**
  * Get the current player
@@ -294,6 +294,6 @@ function resetGame (event) {
 	counter = 0;
 	getCurrentPlayer();
 	resetScore();
-	runGame();	
+	flipCards();	
 	return;
 }
