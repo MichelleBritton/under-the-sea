@@ -19,8 +19,6 @@ let data;
 let pickedCards = [];
 let currentPlayer = getCurrentPlayer();
 
-
-
 // Wait for the DOM to finish loading before running the game
 // Get the button element and add an event listener to it, start the game if the validateInput function is true
 document.addEventListener("DOMContentLoaded", function() {
@@ -289,8 +287,6 @@ function checkWinner() {
 	const matchedCards = document.querySelectorAll(".is-matched");
 
 	if (matchedCards.length === 20){
-		console.log(playerOneScore);
-		console.log(playerTwoScore);
 		if (playerOneScore > playerTwoScore) {
 			message.classList.remove("hide");
 			message.innerHTML = `${firstPlayerName.innerHTML} is the winner!`;
