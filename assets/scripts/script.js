@@ -201,10 +201,14 @@ function startGame() {
 function getCurrentPlayer() {
 	if (counter %2 === 0) {
 		playerId = 1;
-		player.innerHTML = firstPlayer;
+		setTimeout(function() {
+			player.innerHTML = firstPlayer;
+		}, 1000);		
 	} else {
 		playerId = 2;
-		player.innerHTML = secondPlayer;
+		setTimeout(function() {
+			player.innerHTML = secondPlayer;
+		}, 1000);	
 	}
 	return;
 }
@@ -269,12 +273,18 @@ function matchCards() {
 		updateScore();
 		checkWinner();
 	} else {
-		alert("NO");	
+		//alert("NO");	
+		// message.classList.remove("hide");
+		// message.innerHTML = "";
+		// setTimeout(function() {
+		// 	message.classList.add("hide");
+		// }, 1000);
 	}
-	
-	for (let activeCard of activeCards) {
-		activeCard.classList.remove("flipActive");
-	}
+	setTimeout(function() {
+		for (let activeCard of activeCards) {
+			activeCard.classList.remove("flipActive");
+		}
+	}, 1000);
 
 	pickedCards = [];
 	counter ++;
