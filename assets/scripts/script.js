@@ -15,10 +15,15 @@ document.addEventListener("DOMContentLoaded", function() {
 /**
  * Ensure that both fields are filled out and assign names to the scoreboard
  */
+let firstPlayer;
+let secondPlayer;
+let firstPlayerName;
+let secondPlayerName;
+
 function validateInput() {
 
-	let firstPlayer = document.getElementById('player-one').value;
- 	let secondPlayer = document.getElementById('player-two').value;
+	firstPlayer = document.getElementById('player-one').value;
+ 	secondPlayer = document.getElementById('player-two').value;
 
 	if (firstPlayer === "" || secondPlayer === "") {
  		
@@ -27,8 +32,8 @@ function validateInput() {
 
  	} else {
 
- 		let firstPlayerName = document.getElementById('player-one-name');
- 		let secondPlayerName = document.getElementById('player-two-name');
+ 		firstPlayerName = document.getElementById('player-one-name');
+ 		secondPlayerName = document.getElementById('player-two-name');
 
  		firstPlayerName.innerHTML = firstPlayer;
  		secondPlayerName.innerHTML = secondPlayer;
@@ -155,7 +160,7 @@ function startGame() {
 	//Set the welcome-panel to display none after 125ms to give the scale transition time to run first
     setTimeout(function() {
     	welcome.style.display = "none";
-    }, 75);
+    }, 125);
 
     // Create the grid 
 	addGrid();
