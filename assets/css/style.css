@@ -148,7 +148,8 @@ button:hover {
 	transform-style: preserve-3d;
 	width: 100%;
 }
-.card.flipActive .card-inner {
+.card.flipActive .card-inner,
+.card.is-matched .card-inner {
 	transform: rotateY(180deg);
 }
 .card-front, .card-back {

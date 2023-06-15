@@ -215,23 +215,34 @@ function flipCards() {
 			if (cardClicks === 2) {
 				setTimeout(function() {
 					matchCards();
-				}, 125);
+				}, 500);
 			}
 			
 		});		
 	}	
-
 }
 
 function matchCards() {
-	console.log(pickedCards);
+
+	let activeCards = document.querySelectorAll(".flipActive");		
 
 	if (pickedCards[0] === pickedCards[1]) {
 		alert("YES!");
+
+		for (let activeCard of activeCards) {
+			activeCard.classList.add("is-matched");
+			activeCard.classList.remove("flipActive");
+		}
+
 	} else {
 		alert("NO");
+		
+		for (let activeCard of activeCards) {
+			activeCard.classList.remove("flipActive");
+		}
+		
 	}
-
+	
 }
 
 /**
