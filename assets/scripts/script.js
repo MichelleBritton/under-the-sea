@@ -174,6 +174,44 @@ function runGame() {
 
 }
 
+const turnCards = document.getElementsByClassName("card");
+let cardClicks = 0;
+let pickedCards = [];
+
+function flipCards() {	
+		
+	for (let turnCard of turnCards) {
+		turnCard.addEventListener('click', function() {	
+
+			cardClicks += 1;
+
+			if (cardClicks <= 2) {
+				while (cardClicks) {	
+					this.classList.add("flipActive");
+					let data = this.getAttribute("data-type");
+					pickedCards.push(data);	
+					break;
+				} 
+			} else {				
+				matchCards();											
+			}
+			
+		})		
+	}	
+
+}
+
+function matchCards() {
+	console.log(pickedCards);
+
+	if (pickedCards[0] === pickedCards[1]) {
+		alert("YES!");
+	} else {
+		alert("NO");
+	}
+
+}
+
 /**
  * Resets the game by hiding the grid, shuffling the cards and revealing the grid again
  */
