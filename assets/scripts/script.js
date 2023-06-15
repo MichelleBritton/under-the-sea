@@ -4,6 +4,7 @@ const turnCards = document.getElementsByClassName("card");
 const newGame = document.getElementById("new-game");
 const playerOneHtml = document.getElementById("player-one-score");
 const playerTwoHtml = document.getElementById("player-two-score");
+const message = document.getElementById("popup");
 let player = document.getElementById("player");
 let firstPlayer;
 let secondPlayer;
@@ -254,10 +255,17 @@ function matchCards() {
 	const activeCards = document.querySelectorAll(".flipActive");		
 
 	if (pickedCards[0] === pickedCards[1]) {
-		alert("YES!");
+		//alert("YES!");
 		for (let activeCard of activeCards) {
 			activeCard.classList.add("is-matched");
 		}
+		
+		message.classList.remove("hide");
+		message.innerHTML = "It's a Match!";
+		setTimeout(function() {
+			message.classList.add("hide");
+		}, 1000);
+
 		updateScore();
 		checkWinner();
 	} else {
