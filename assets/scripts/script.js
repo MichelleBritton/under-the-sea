@@ -6,6 +6,8 @@ let secondPlayerName;
 const welcome = document.getElementById("welcome-panel");
 const turnCards = document.getElementsByClassName("card");
 const newGame = document.getElementById("new-game");
+let counter = 0;
+let playerId;
 let cardClicks = 0;
 let data;
 let pickedCards = [];
@@ -185,6 +187,18 @@ function runGame() {
 	flipCards();
 }
 
+/**
+ * Get the current player
+ * Code credit: https://github.com/adriane26/theGame/blob/master/memory.js
+ */
+function getCurrentPlayer() {
+	if (counter %2 === 0) {
+		playerId = 1;
+	} else {
+		playerId = 2;
+	}
+}
+
 function flipCards() {			
 	for (let turnCard of turnCards) {
 		turnCard.addEventListener('click', function() {	
@@ -228,6 +242,9 @@ function matchCards() {
 	}
 
 	pickedCards = [];
+	counter ++;
+	console.log(counter);
+	return;
 	flipCards();
 }
 
