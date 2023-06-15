@@ -212,3 +212,23 @@ button:hover {
 	display: inline-block;
 	margin-left: 10px;
 }
+
+/* Player's turn */
+#player-turns {
+	background: url('../images/score-bg.png') no-repeat;
+	background-size: cover;
+	padding: 2% 0;
+	position: absolute;
+	left: 2.5%;
+	text-align: center;
+	top: 20px;
+	width: 20%;
+}
+#player-turns.hide {
+	display: none;
+	opacity: 0;
+	scale: 0;
+}
+#player {
+	display: inline-block;
+}

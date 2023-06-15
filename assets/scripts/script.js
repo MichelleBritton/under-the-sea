@@ -6,6 +6,7 @@ let secondPlayerName;
 const welcome = document.getElementById("welcome-panel");
 const turnCards = document.getElementsByClassName("card");
 const newGame = document.getElementById("new-game");
+let player = document.getElementById("player");
 let counter = 0;
 let playerId;
 let cardClicks = 0;
@@ -42,6 +43,8 @@ function validateInput() {
 
  		firstPlayerName.innerHTML = firstPlayer;
  		secondPlayerName.innerHTML = secondPlayer;
+
+		player.innerHTML = firstPlayer;
  	}
 }
 
@@ -149,7 +152,7 @@ function createGrid() {
 }
 
 /** 
- * Shuffle the cards and add the grid
+ * Shuffle the card, add the grid and player board
  */
 function addGrid() {
 	shuffle(cards);
@@ -157,11 +160,12 @@ function addGrid() {
 	let grid = createGrid();
 	document.getElementById('grid').innerHTML = grid;
 
-	/* Set the grid to appear after 500ms to give the welcome panel enough time to transition and display: none
+	/* Set the grid and player board to appear after 500ms to give the welcome panel enough time to transition and display: none
 	and allow time for grid transitions to run */
     setTimeout(function() {
     	document.getElementById('grid').classList.remove("hide");
     	document.getElementById('new-game').classList.remove("hide");
+		document.getElementById("player-turns").classList.remove("hide");
     }, 500);
 }
 
@@ -194,8 +198,10 @@ function runGame() {
 function getCurrentPlayer() {
 	if (counter %2 === 0) {
 		playerId = 1;
+		player.innerHTML = firstPlayer;
 	} else {
 		playerId = 2;
+		player.innerHTML = secondPlayer;
 	}
 }
 
@@ -243,7 +249,7 @@ function matchCards() {
 
 	pickedCards = [];
 	counter ++;
-	console.log(counter);
+	getCurrentPlayer();
 	return;
 	flipCards();
 }
@@ -263,5 +269,6 @@ function resetGame (event) {
 
 	pickedCards = [];
 	cardClicks = 0;
+	counter = 0;
 	runGame();
 }
