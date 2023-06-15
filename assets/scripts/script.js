@@ -1,45 +1,46 @@
+// Declare Variables
+let firstPlayer;
+let secondPlayer;
+let firstPlayerName;
+let secondPlayerName;
+const welcome = document.getElementById("welcome-panel");
+const turnCards = document.getElementsByClassName("card");
+const newGame = document.getElementById("new-game");
+let cardClicks = 0;
+let data;
+let pickedCards = [];
+
+
+
 // Wait for the DOM to finish loading before running the game
 // Get the button element and add an event listener to it, start the game if the validateInput function is true
 document.addEventListener("DOMContentLoaded", function() {
-
 	let button = document.getElementById('btn');
 	
 	button.addEventListener("click", function() {
 		if (validateInput() != false) {
 			startGame();	
 		}
-	});	
-	
+	});		
 });
 
 /**
  * Ensure that both fields are filled out and assign names to the scoreboard
  */
-let firstPlayer;
-let secondPlayer;
-let firstPlayerName;
-let secondPlayerName;
-
 function validateInput() {
-
 	firstPlayer = document.getElementById('player-one').value;
  	secondPlayer = document.getElementById('player-two').value;
 
-	if (firstPlayer === "" || secondPlayer === "") {
- 		
+	if (firstPlayer === "" || secondPlayer === "") { 		
  		alert("Please fill in both fields");
  		return false;
-
  	} else {
-
  		firstPlayerName = document.getElementById('player-one-name');
  		secondPlayerName = document.getElementById('player-two-name');
 
  		firstPlayerName.innerHTML = firstPlayer;
  		secondPlayerName.innerHTML = secondPlayer;
-
  	}
-
 }
 
 // Create an array of objects to add images.  Clone the array and then join them together to create pairs of cards
@@ -119,7 +120,6 @@ function shuffle(a) {
  * Create HTML Grid and populate it with data from the shuffled array
  */
 function createGrid() {
-
 	let html = `
 		<div class="cards-container">
 	`;
@@ -143,37 +143,17 @@ function createGrid() {
 
 	html =+ `
 		</div>
-	`;
-	
+	`;	
 }
 
 /** 
  * Shuffle the cards and add the grid
  */
 function addGrid() {
-
 	shuffle(cards);
 
 	let grid = createGrid();
 	document.getElementById('grid').innerHTML = grid;
-
-}
-
-/**
- * Hide Welcome Panel when start button is pressed and display grid
- * */
-function startGame() {	
-
-    let welcome = document.getElementById("welcome-panel");
-    welcome.classList.add("hide");
-
-	//Set the welcome-panel to display none after 125ms to give the scale transition time to run first
-    setTimeout(function() {
-    	welcome.style.display = "none";
-    }, 125);
-
-    // Create the grid 
-	addGrid();
 
 	/* Set the grid to appear after 500ms to give the welcome panel enough time to transition and display: none
 	and allow time for grid transitions to run */
@@ -181,26 +161,33 @@ function startGame() {
     	document.getElementById('grid').classList.remove("hide");
     	document.getElementById('new-game').classList.remove("hide");
     }, 500);
+}
+
+/**
+ * Hide Welcome Panel when start button is pressed and display grid
+ * */
+function startGame() {	
+	// Hide the welcome panel
+    welcome.classList.add("hide");
+
+	//Set the welcomepanel to display none after 125ms to give the scale transition time to run first
+    setTimeout(function() {
+    	welcome.style.display = "none";
+    }, 125);
+
+    // Create the grid 
+	addGrid();
 
 	runGame();
 }
 
-function runGame() {
-	
+function runGame() {	
 	flipCards();
-
 }
 
-const turnCards = document.getElementsByClassName("card");
-let cardClicks = 0;
-let data;
-let pickedCards = [];
-
-function flipCards() {	
-		
+function flipCards() {			
 	for (let turnCard of turnCards) {
 		turnCard.addEventListener('click', function() {	
-
 			cardClicks += 1;
 
 			if (cardClicks <= 2) {
@@ -216,58 +203,46 @@ function flipCards() {
 				setTimeout(function() {
 					matchCards();
 				}, 500);
+				cardClicks = 0;
 			}
 			
 		});		
-	}	
+	}		
 }
 
 function matchCards() {
-
-	let activeCards = document.querySelectorAll(".flipActive");		
+	console.log(pickedCards);	
+	const activeCards = document.querySelectorAll(".flipActive");		
 
 	if (pickedCards[0] === pickedCards[1]) {
 		alert("YES!");
-
 		for (let activeCard of activeCards) {
 			activeCard.classList.add("is-matched");
-			activeCard.classList.remove("flipActive");
 		}
-
 	} else {
-		alert("NO");
-		
-		for (let activeCard of activeCards) {
-			activeCard.classList.remove("flipActive");
-		}
+		alert("NO");	
+	}
+	
+	for (let activeCard of activeCards) {
+		activeCard.classList.remove("flipActive");
 	}
 
 	pickedCards = [];
-	cardClicks = 0;
-	debuuger;
 	flipCards();
 }
 
 /**
  * Resets the game by hiding the grid, shuffling the cards and revealing the grid again
  */
-let newGame = document.getElementById("new-game");
 newGame.addEventListener('click', resetGame);
 
 function resetGame (event) {
-
 	// Hide the grid
 	document.getElementById('grid').classList.add("hide");
 	document.getElementById('new-game').classList.add("hide");
 
 	// Create a new grid
 	addGrid();
-
-	//Set the grid to appear after 500ms to allow time for grid transitions to run
-	setTimeout(function() {
-    	document.getElementById('grid').classList.remove("hide");
-    	document.getElementById('new-game').classList.remove("hide");
-    }, 500);
 
 	pickedCards = [];
 	cardClicks = 0;
