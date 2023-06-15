@@ -153,7 +153,7 @@ function createGrid() {
 }
 
 /** 
- * Shuffle the card, add the grid and player board
+ * Shuffle the card, add the grid, player board and score board
  */
 function addGrid() {
 	shuffle(cards);
@@ -167,6 +167,7 @@ function addGrid() {
     	document.getElementById('grid').classList.remove("hide");
     	document.getElementById('new-game').classList.remove("hide");
 		document.getElementById("player-turns").classList.remove("hide");
+		document.getElementById("score-board").classList.remove("hide");
     }, 500);
 }
 

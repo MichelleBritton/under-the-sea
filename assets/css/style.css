@@ -200,12 +200,21 @@ button:hover {
 #score-board {
 	background: url('../images/score-bg.png') no-repeat;
 	background-size: 100%;
+	opacity: 1;
 	padding: 2% 0;
 	position: absolute;
 	right: 2.5%;
+	scale: 1;
 	text-align: center;
 	top: 20px;
+	transition: opacity 3s, scale 3s;
+	transition-delay: 2s;
 	width: 20%;
+}
+#score-board.hide {
+	display: none;
+	opacity: 0;
+	scale: 0;
 }
 #score-board h3 span:last-of-type {
 	color: #fff;
@@ -219,11 +228,15 @@ button:hover {
 	background-size: 100%;
 	color: #3d6892;
     font: 600 200%  'Atma', cursive;
+	left: 2.5%;
+	opacity: 1;
 	padding: 2% 0;
 	position: absolute;
-	left: 2.5%;
+	scale: 1;
 	text-align: center;
 	top: 20px;
+	transition: opacity 3s, scale 3s;
+	transition-delay: 2s;
 	width: 15%;
 }
 #player-turns.hide {
