@@ -148,7 +148,7 @@ button:hover {
 	transform-style: preserve-3d;
 	width: 100%;
 }
-.card:hover .card-inner {
+.card.flipActive .card-inner {
 	transform: rotateY(180deg);
 }
 .card-front, .card-back {
