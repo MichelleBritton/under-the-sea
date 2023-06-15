@@ -212,6 +212,21 @@ function getCurrentPlayer() {
 	return;
 }
 
+function updateScore() {
+	if (playerId === 1) {
+		playerOneHtml.innerHTML = ++playerOneScore;
+	} else {
+		playerTwoHtml.innerHTML = ++playerTwoScore; 
+	}
+}
+
+function resetScore() {
+	playerOneScore = 0;
+	playerTwoScore = 0;
+	playerOneHtml.innerHTML = 0;
+	playerTwoHtml.innerHTML = 0; 
+}
+
 function flipCards() {			
 	for (let turnCard of turnCards) {
 		turnCard.addEventListener('click', function() {	
@@ -246,12 +261,7 @@ function matchCards() {
 		for (let activeCard of activeCards) {
 			activeCard.classList.add("is-matched");
 		}
-
-		if (playerId === 1) {
-			playerOneHtml.innerHTML = ++playerOneScore;
-		} else {
-			playerTwoHtml.innerHTML = ++playerTwoScore; 
-		}
+		updateScore();
 	} else {
 		alert("NO");	
 	}
@@ -271,20 +281,19 @@ function matchCards() {
  */
 newGame.addEventListener('click', resetGame);
 
-function resetGame (event) {
+function resetGame (event) {	
 	// Hide the grid
 	document.getElementById('grid').classList.add("hide");
 	document.getElementById('new-game').classList.add("hide");
 
 	// Create a new grid
 	addGrid();
-
+	
 	pickedCards = [];
 	cardClicks = 0;
 	counter = 0;
-	playerOneScore = 0;
-	playerTwoScore = 0;
 	getCurrentPlayer();
-	runGame();
+	resetScore();
+	runGame();	
 	return;
 }
