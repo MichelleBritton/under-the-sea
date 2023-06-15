@@ -244,8 +244,11 @@ function matchCards() {
 
 		if (playerId === 1) {
 			let playerOneScore = document.getElementById("player-one-score");
-			playerOneScore.innerHTML = score++;
-		} 
+			playerOneScore.innerHTML = score+=1;
+		} else {
+			let playerTwoScore = document.getElementById("player-two-score");
+			playerTwoScore.innerHTML = score+=1;
+		}
 	} else {
 		alert("NO");	
 	}
@@ -276,6 +279,7 @@ function resetGame (event) {
 	pickedCards = [];
 	cardClicks = 0;
 	counter = 0;
+	score = 0;
 	getCurrentPlayer();
 	runGame();
 }
