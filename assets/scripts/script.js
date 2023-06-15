@@ -272,14 +272,8 @@ function matchCards() {
 
 		updateScore();
 		checkWinner();
-	} else {
-		//alert("NO");	
-		// message.classList.remove("hide");
-		// message.innerHTML = "";
-		// setTimeout(function() {
-		// 	message.classList.add("hide");
-		// }, 1000);
-	}
+	} 
+	
 	setTimeout(function() {
 		for (let activeCard of activeCards) {
 			activeCard.classList.remove("flipActive");
