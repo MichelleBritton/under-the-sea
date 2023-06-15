@@ -210,8 +210,12 @@ function flipCards() {
 					break;
 				} 
 				pickedCards.push(data);	
-			} else {				
-				matchCards();											
+			} 
+
+			if (cardClicks === 2) {
+				setTimeout(function() {
+					matchCards();
+				}, 125);
 			}
 			
 		});		
