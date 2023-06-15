@@ -8,6 +8,7 @@ const turnCards = document.getElementsByClassName("card");
 const newGame = document.getElementById("new-game");
 let player = document.getElementById("player");
 let counter = 0;
+let score = 0;
 let playerId;
 let cardClicks = 0;
 let data;
@@ -239,6 +240,11 @@ function matchCards() {
 		for (let activeCard of activeCards) {
 			activeCard.classList.add("is-matched");
 		}
+
+		if (playerId === 1) {
+			let playerOneScore = document.getElementById("player-one-score");
+			playerOneScore.innerHTML = score++;
+		} 
 	} else {
 		alert("NO");	
 	}
