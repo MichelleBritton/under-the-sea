@@ -208,6 +208,7 @@ function getCurrentPlayer() {
 	return;
 }
 
+// Update the Score Board
 function updateScore() {
 	if (playerId === 1) {
 		playerOneHtml.innerHTML = ++playerOneScore;
@@ -216,6 +217,7 @@ function updateScore() {
 	}
 }
 
+// Reset the Score Board
 function resetScore() {
 	playerOneScore = 0;
 	playerTwoScore = 0;
@@ -257,6 +259,7 @@ function matchCards() {
 			activeCard.classList.add("is-matched");
 		}
 		updateScore();
+		checkWinner();
 	} else {
 		alert("NO");	
 	}
@@ -271,7 +274,23 @@ function matchCards() {
 	return;
 }
 
+function checkWinner() {
+	const matchedCards = document.querySelectorAll(".is-matched");
 
+	if (matchedCards.length === 20){
+		console.log(playerOneScore);
+		console.log(playerTwoScore);
+		if (playerOneScore > playerTwoScore) {
+			alert(firstPlayerName.innerHTML + " is the winner!");
+		} else if (playerOneScore < playerTwoScore) {
+			alert(secondPlayerName.innerHTML + " is the winner!");
+		} else if (playerOneScore === playerTwoScore) {
+			alert("It's a draw");
+		}
+	} else {
+		return;
+	}
+}
 
 /**
  * Resets the game by hiding the grid, shuffling the cards and revealing the grid again
