@@ -240,12 +240,11 @@ function matchCards() {
 		for (let activeCard of activeCards) {
 			activeCard.classList.remove("flipActive");
 		}
-		
 	}
 
 	pickedCards = [];
 	cardClicks = 0;
-
+	debuuger;
 	flipCards();
 }
 
@@ -270,4 +269,7 @@ function resetGame (event) {
     	document.getElementById('new-game').classList.remove("hide");
     }, 500);
 
+	pickedCards = [];
+	cardClicks = 0;
+	runGame();
 }
