@@ -186,7 +186,7 @@ function startGame() {
 }
 
 function runGame() {
-
+	
 	flipCards();
 
 }
@@ -242,7 +242,11 @@ function matchCards() {
 		}
 		
 	}
-	
+
+	pickedCards = [];
+	cardClicks = 0;
+
+	flipCards();
 }
 
 /**
