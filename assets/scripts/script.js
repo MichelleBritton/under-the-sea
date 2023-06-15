@@ -259,7 +259,6 @@ function matchCards() {
 	const activeCards = document.querySelectorAll(".flipActive");		
 
 	if (pickedCards[0] === pickedCards[1]) {
-		//alert("YES!");
 		for (let activeCard of activeCards) {
 			activeCard.classList.add("is-matched");
 		}
@@ -273,7 +272,7 @@ function matchCards() {
 		updateScore();
 		checkWinner();
 	} 
-	
+
 	setTimeout(function() {
 		for (let activeCard of activeCards) {
 			activeCard.classList.remove("flipActive");
@@ -293,11 +292,27 @@ function checkWinner() {
 		console.log(playerOneScore);
 		console.log(playerTwoScore);
 		if (playerOneScore > playerTwoScore) {
-			alert(firstPlayerName.innerHTML + " is the winner!");
+			message.classList.remove("hide");
+			message.innerHTML = `${firstPlayerName.innerHTML} is the winner!`;
+			setTimeout(function() {
+				message.classList.add("hide");
+			}, 1000);
+
+			//alert(firstPlayerName.innerHTML + " is the winner!");
 		} else if (playerOneScore < playerTwoScore) {
-			alert(secondPlayerName.innerHTML + " is the winner!");
+			message.classList.remove("hide");
+			message.innerHTML = `${secondPlayerName.innerHTML} is the winner!`;
+			setTimeout(function() {
+				message.classList.add("hide");
+			}, 1000);
+			//alert(secondPlayerName.innerHTML + " is the winner!");
 		} else if (playerOneScore === playerTwoScore) {
-			alert("It's a draw");
+			message.classList.remove("hide");
+			message.innerHTML = "It's a draw";
+			setTimeout(function() {
+				message.classList.add("hide");
+			}, 1000);
+			//alert("It's a draw");
 		}
 	} else {
 		return;
