@@ -297,22 +297,18 @@ function checkWinner() {
 			setTimeout(function() {
 				message.classList.add("hide");
 			}, 1000);
-
-			//alert(firstPlayerName.innerHTML + " is the winner!");
 		} else if (playerOneScore < playerTwoScore) {
 			message.classList.remove("hide");
 			message.innerHTML = `${secondPlayerName.innerHTML} is the winner!`;
 			setTimeout(function() {
 				message.classList.add("hide");
 			}, 1000);
-			//alert(secondPlayerName.innerHTML + " is the winner!");
 		} else if (playerOneScore === playerTwoScore) {
 			message.classList.remove("hide");
-			message.innerHTML = "It's a draw";
+			message.innerHTML = "It's a draw!";
 			setTimeout(function() {
 				message.classList.add("hide");
 			}, 1000);
-			//alert("It's a draw");
 		}
 	} else {
 		return;
