@@ -44,45 +44,55 @@ function validateInput() {
 
 // Create an array of objects to add images.  Clone the array and then join them together to create pairs of cards
 let originalCards = [
-    {
+	{
 		front: 'assets/images/angelfish.png',
 		back: 'assets/images/back.png',
+		fish: 'angelfish',
 	},
 	{
 		front: 'assets/images/clownfish.png',
 		back: 'assets/images/back.png',
+		fish: 'clownfish',
 	},
 	{
 		front: 'assets/images/crab.png',
 		back: 'assets/images/back.png',
+		fish: 'crab',
 	},
 	{
 		front: 'assets/images/jellyfish.png',
 		back: 'assets/images/back.png',
+		fish: 'jellyfish',
 	},
 	{
 		front: 'assets/images/octopus.png',
 		back: 'assets/images/back.png',
+		fish: 'octopus',
 	},
 	{
 		front: 'assets/images/seahorse.png',
 		back: 'assets/images/back.png',
+		fish: 'seahorse',
 	},
 	{
 		front: 'assets/images/shark.png',
 		back: 'assets/images/back.png',
+		fish: 'shark',
 	},
 	{
 		front: 'assets/images/starfish.png',
 		back: 'assets/images/back.png',
+		fish: 'starfish',
 	},
 	{
 		front: 'assets/images/turtle.png',
 		back: 'assets/images/back.png',
+		fish: 'turtle',
 	},
 	{
 		front: 'assets/images/whale.png',
 		back: 'assets/images/back.png',
+		fish: 'whale',
 	},
 ];
 
