@@ -126,7 +126,7 @@ function createGrid() {
 
 	for (card of cards) {
 		let item = `
-			<div class="card">
+			<div class="card" data-type="${card.fish}">
   				<div class="card-inner">
                   <div class="card-front">
                   <img src="${card.back}">
