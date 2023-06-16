@@ -97,12 +97,12 @@ label {
 	color: #3d6892;
 	float: left;
 	font: 600 120% 'Atma', cursive;
-	width: 23%;
+	width: 25%;
 }
 input {
 	float: right;
 	padding: 5px;
-	width: 72%;
+	width: 70%;
 }
 button {
 	background: #63b08c;
