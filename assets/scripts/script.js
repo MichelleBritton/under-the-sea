@@ -164,14 +164,14 @@ function addGrid() {
 	let grid = createGrid();
 	document.getElementById('grid').innerHTML = grid;
 
-	/* Set the grid and player board to appear after 500ms to give the welcome panel enough time to transition and display: none
+	/* Set the grid and player board to appear after 1000ms to give the welcome panel enough time to transition and display: none
 	and allow time for grid transitions to run */
     setTimeout(function() {
     	document.getElementById('grid').classList.remove("hide");
     	document.getElementById('new-game').classList.remove("hide");
 		document.getElementById("player-turns").classList.remove("hide");
 		document.getElementById("score-board").classList.remove("hide");
-    }, 500);
+    }, 1000);
 }
 
 /**
@@ -181,10 +181,10 @@ function startGame() {
 	// Hide the welcome panel
     welcome.classList.add("hide");
 
-	//Set the welcome panel to display none after 125ms to give the scale transition time to run first
+	//Set the welcome panel to display none after 1000ms to give the scale transition time to run first
     setTimeout(function() {
     	welcome.style.display = "none";
-    }, 125);
+    }, 1000);
 
     // Create the grid 
 	addGrid();
@@ -302,19 +302,19 @@ function checkWinner() {
 			message.innerHTML = `${firstPlayerName.innerHTML}<br>is the winner!`;	
 			setTimeout(function() {
 				message.classList.add("hide");
-			}, 10000);		
+			}, 3000);		
 		} else if (playerOneScore < playerTwoScore) {
 			message.classList.remove("hide");
 			message.innerHTML = `${secondPlayerName.innerHTML}<br>is the winner!`;	
 			setTimeout(function() {
 				message.classList.add("hide");
-			}, 10000);		
+			}, 3000);		
 		} else if (playerOneScore === playerTwoScore) {
 			message.classList.remove("hide");
 			message.innerHTML = "It's a<br>draw!";	
 			setTimeout(function() {
 				message.classList.add("hide");
-			}, 10000);		
+			}, 3000);		
 		}
 	} else {
 		return;

@@ -57,7 +57,7 @@ h3 {
 /* Hide class */
 #welcome-panel.hide {
 	transform: scale(0);
-	transition: all .6s;
+	transition: all .6s ease-in;
 }
 #grid.hide, #new-game.hide, #score-board.hide, #player-turns.hide, #popup.hide { 
 	display: none;
@@ -128,8 +128,8 @@ button:hover {
 	display: block;
 	opacity: 1;
 	transform: scale(1);
-	transition: all 6s;
-	transition-delay: 2s;
+	transition: all 6s ease-in;
+	transition-delay: 1s;
 	width: 100%;
 }
 .cards-container {
@@ -187,8 +187,9 @@ button:hover {
 	opacity: 1;
 	padding: 10px 30px;
 	transform: scale(1);
-	transition: all 6s;
-	transition-delay: 2s;
+	transform: scale(1);
+	transition: all 6s ease-in;
+	transition-delay: 1s;
 	text-align: center;
 	width: 90%;
 }
@@ -209,8 +210,9 @@ button:hover {
 	transform: scale(1);
 	text-align: center;
 	top: 80px;
-	transition: all 6s;
-	transition-delay: 2s;
+	transform: scale(1);
+	transition: all 6s ease-in;
+	transition-delay: 1s;
 	width: 40%;
 }
 #score-board h3 span:last-of-type {
@@ -233,8 +235,9 @@ button:hover {
 	transform: scale(1);
 	text-align: center;
 	top: 90px;
-	transition: all 6s;
-	transition-delay: 2s;
+	transform: scale(1);
+	transition: all 6s ease-in;
+	transition-delay: 1s;
 	width: 40%;
 }
 #player {
