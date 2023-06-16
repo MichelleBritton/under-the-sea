@@ -156,7 +156,7 @@ function createGrid() {
 }
 
 /** 
- * Shuffle the card, add the grid, player board and score board
+ * Shuffle the cards, add the grid, player board and score board
  */
 function addGrid() {
 	shuffle(cards);
@@ -181,7 +181,7 @@ function startGame() {
 	// Hide the welcome panel
     welcome.classList.add("hide");
 
-	//Set the welcomepanel to display none after 125ms to give the scale transition time to run first
+	//Set the welcome panel to display none after 125ms to give the scale transition time to run first
     setTimeout(function() {
     	welcome.style.display = "none";
     }, 125);
@@ -228,6 +228,10 @@ function resetScore() {
 	playerTwoHtml.innerHTML = 0; 
 }
 
+/**
+ * Turn the cards over when clicked on, count the clicks and push the 
+ * data type of the clicked cards into an array ready to check for a match
+ */
 function flipCards() {			
 	for (let turnCard of turnCards) {
 		turnCard.addEventListener('click', function() {	
@@ -253,6 +257,11 @@ function flipCards() {
 	}		
 }
 
+/** 
+ * Check the two data types in the array to see if they match,
+ * update the score, check to see if there is a winner and reset
+ * the counter, empty the array and get the current player
+ */
 function matchCards() {
 	const activeCards = document.querySelectorAll(".flipActive");		
 
@@ -283,6 +292,7 @@ function matchCards() {
 	return;
 }
 
+// Check for a winner
 function checkWinner() {
 	const matchedCards = document.querySelectorAll(".is-matched");
 
