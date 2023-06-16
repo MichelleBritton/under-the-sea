@@ -284,7 +284,7 @@ function matchCards() {
 		for (let activeCard of activeCards) {
 			activeCard.classList.remove("flipActive");
 		}
-	}, 800);
+	}, 400);
 
 	pickedCards = [];
 	counter ++;
