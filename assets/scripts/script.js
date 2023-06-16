@@ -262,10 +262,10 @@ function matchCards() {
 		}
 		
 		message.classList.remove("hide");
-		message.innerHTML = "It's a Match!";
+		message.innerHTML = "It's a<br>Match!";
 		setTimeout(function() {
 			message.classList.add("hide");
-		}, 1000);
+		}, 1500);
 
 		updateScore();
 		checkWinner();
@@ -275,7 +275,7 @@ function matchCards() {
 		for (let activeCard of activeCards) {
 			activeCard.classList.remove("flipActive");
 		}
-	}, 1000);
+	}, 800);
 
 	pickedCards = [];
 	counter ++;
@@ -289,22 +289,22 @@ function checkWinner() {
 	if (matchedCards.length === 20){
 		if (playerOneScore > playerTwoScore) {
 			message.classList.remove("hide");
-			message.innerHTML = `${firstPlayerName.innerHTML} is the winner!`;
+			message.innerHTML = `${firstPlayerName.innerHTML}<br>is the winner!`;	
 			setTimeout(function() {
 				message.classList.add("hide");
-			}, 1000);
+			}, 10000);		
 		} else if (playerOneScore < playerTwoScore) {
 			message.classList.remove("hide");
-			message.innerHTML = `${secondPlayerName.innerHTML} is the winner!`;
+			message.innerHTML = `${secondPlayerName.innerHTML}<br>is the winner!`;	
 			setTimeout(function() {
 				message.classList.add("hide");
-			}, 1000);
+			}, 10000);		
 		} else if (playerOneScore === playerTwoScore) {
 			message.classList.remove("hide");
-			message.innerHTML = "It's a draw!";
+			message.innerHTML = "It's a<br>draw!";	
 			setTimeout(function() {
 				message.classList.add("hide");
-			}, 1000);
+			}, 10000);		
 		}
 	} else {
 		return;

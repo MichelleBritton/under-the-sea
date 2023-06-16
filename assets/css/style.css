@@ -256,19 +256,30 @@ button:hover {
 
 /* Pop up */
 #popup {
-	background: pink;
-	height: 200px;
+	background: url("../images/star.png") no-repeat;
+	background-size: contain;
+	color: #fff;
+    font: 600 200%  'Atma', cursive;
 	left: 50vw;
+	height: 406px;
+	padding: 150px 30px;
 	position: absolute; 
+	opacity: 1;
+	scale: 1;
+	text-align: center;
+	text-shadow: 0px 4px 2px rgba(0,0,0,0.7);
 	top: 50vh;
 	-webkit-transform: translate(-50%, -50%);
 	-moz-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	width: 200px;
+	transition: opacity 3s, scale 3s;
+	width: 426px;
 	z-index: 10;
 }
 #popup.hide {
 	display: none;
+	opacity: 0;
+	scale: 0;
 }
