@@ -19,7 +19,7 @@ img {
     max-width: 100%;
 }
 p, ul, ol, address, td, th, legend, label, input, textarea {
-    font-size: 150%;
+    font-size: 100%;
     font-style: normal;
     margin: 18px 0;
 }
@@ -36,75 +36,80 @@ a {
 /* Headings */
 h1, h2, h3 {
     color: #3d6892;
-    font: 600 800%  'Atma', cursive;
+    font: 600 400%  'Atma', cursive;
     line-height: 1;
-    margin: 0 0 30px;
+    margin: 0 0 10px;
 }
 h1 {
     margin: 0;
 	text-shadow: 0px 5px 2px rgba(0,0,0,0.7);
 }
 h2 {
-    font-size: 300%;
+    font-size: 100%;
 }
 #score-board h2 {
 	color: #fff;
 }
 h3 {
-    font-size: 200%;
+    font-size: 80%;
 }
 
 /* Body */
 body {
 	background: url('../images/bg.png') no-repeat;
 	background-size: cover;
+	min-height: 100vh;
+	height: 100%;
 }
 
 /* Header */
 header {
-	padding: 1.5% 2.5%;
+	padding: 1.5%;
 	text-align: center;
 }
 
 /* Main Panel */
 #main-panel {
-	padding: 0 2.5%;
+	padding: 0 1.5%;
 	text-align: center;
 }
 
 /* Welcome Panel */
 #welcome-panel { 
-	background: url('../images/instructions-bg.png') no-repeat;
-	background-size: 100%;	
+	background: rgba(245,223,140,.8);
 	margin: 5% auto 0;
-	padding: 5% 10% 7%;
+	padding: 5%;
 	scale: 1;
-	width: 75%;
+	width: 85%;
 }
 #welcome-panel.hide {
 	scale: 0;
 	transition: all .6s;
 }
 #welcome-panel h2 {
-	font-size: 400%;
+	font-size: 200%;
 }
 #welcome-panel p:last-of-type {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 label {
+	clear: both;
 	color: #3d6892;
-	font: 600 180% 'Atma', cursive;
+	float: left;
+	font: 600 120% 'Atma', cursive;
+	width: 20%;
 }
 input {
-	margin: 0 50px 0 10px;
-	padding: 10px;
+	float: right;
+	padding: 5px;
+	width: 75%;
 }
 button {
 	background: #63b08c;
 	border-radius: 20px;
 	cursor: pointer;
-	font: 600 180% 'Atma', cursive;
-	padding: 10px 30px;
+	font: 600 130% 'Atma', cursive;
+	padding: 5px 30px;
 }
 button:hover {
 	background: #3d6892;
@@ -126,18 +131,18 @@ button:hover {
 	scale: 0;	
 }
 .cards-container {
-	margin: 0 auto;
+	margin: 110px auto 0;
 	overflow: hidden;
-	width: 60%;
+	width: 90%;
 }
 /* Credit: https://www.w3schools.com/howto/howto_css_flip_card.asp */
 .card {
 	background-color: transparent;
 	cursor: pointer;
 	float: left;
-	height: 200px;
+	height: 120px;
 	margin: 0 1% 2% 1%;
-	width: 18%;  
+	width: 23%;  
 	perspective: 1000px;
 }
 .card-inner {
@@ -175,16 +180,15 @@ button:hover {
 	border-radius: 20px;
 	cursor: pointer;
 	display: block;
-	font: 600 180% 'Atma', cursive;
-	margin: 0 auto;
-	padding: 10px 30px;	
+	font: 600 120% 'Atma', cursive;
+	margin: 0 auto 10px;
 	opacity: 1;
 	padding: 10px 30px;
 	scale: 1;
 	transition: opacity 3s, scale 3s;
 	transition-delay: 2s;
 	text-align: center;
-	width: 30%;
+	width: 90%;
 }
 #new-game.hide {
 	display: none;
@@ -198,18 +202,19 @@ button:hover {
 
 /* Score Board */
 #score-board {
-	background: url('../images/score-bg.png') no-repeat;
-	background-size: 100%;
+	background: #6cc9d1;
+	border: 1px solid #fff;
+	border-radius: 20px;
 	opacity: 1;
 	padding: 2% 0;
 	position: absolute;
-	right: 2.5%;
+	right: 1.5%;
 	scale: 1;
 	text-align: center;
-	top: 20px;
+	top: 80px;
 	transition: opacity 3s, scale 3s;
 	transition-delay: 2s;
-	width: 20%;
+	width: 40%;
 }
 #score-board.hide {
 	display: none;
@@ -224,20 +229,21 @@ button:hover {
 
 /* Player's turn */
 #player-turns {
-	background: url('../images/score-bg.png') no-repeat;
-	background-size: 100%;
+	background: #6cc9d1;
+	border: 1px solid #fff;
+	border-radius: 20px;
 	color: #3d6892;
-    font: 600 200%  'Atma', cursive;
-	left: 2.5%;
+    font: 600 80% 'Atma', cursive;
+	left: 1.5%;
 	opacity: 1;
 	padding: 2% 0;
 	position: absolute;
 	scale: 1;
 	text-align: center;
-	top: 20px;
+	top: 90px;
 	transition: opacity 3s, scale 3s;
 	transition-delay: 2s;
-	width: 15%;
+	width: 40%;
 }
 #player-turns.hide {
 	display: none;
@@ -259,10 +265,10 @@ button:hover {
 	background: url("../images/star.png") no-repeat;
 	background-size: contain;
 	color: #fff;
-    font: 600 200%  'Atma', cursive;
+    font: 600 150% 'Atma', cursive;
 	left: 50vw;
-	height: 406px;
-	padding: 150px 30px;
+	height: 306px;
+	padding: 120px 30px;
 	position: absolute; 
 	opacity: 1;
 	scale: 1;
@@ -275,11 +281,210 @@ button:hover {
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	transition: opacity 3s, scale 3s;
-	width: 426px;
+	width: 326px;
 	z-index: 10;
 }
 #popup.hide {
 	display: none;
 	opacity: 0;
 	scale: 0;
+}
+
+/* Media Queries: Small devices from 600px wide and up */
+@media screen and (min-width: 600px) {
+	.card {
+		height: 140px;
+	}
+}
+
+/* Media Queries: Small devices from 700px wide and up */
+@media screen and (min-width: 700px) {
+	.card {
+		height: 160px;
+	}
+}
+
+/* Media Queries: Small devices from 800px wide and up */
+@media screen and (min-width: 700px) {
+	.card {
+		height: 180px;
+	}
+}
+
+/* Media Queries: Small devices from 800px wide and up */
+@media screen and (min-width: 700px) {
+	.card {
+		height: 200px;
+	}
+}
+
+/* Media Queries: Medium devices from 1024px wide and up */
+@media screen and (min-width: 1024px) {
+	h2 {
+		font-size: 150%;
+	}
+	h3 {
+		font-size: 110%;
+	}
+	#welcome-panel { 
+		background: url('../images/instructions-bg.png') no-repeat;
+		background-size: 100%, 100%;
+		padding: 5% 8% 10%;
+		width: 95%;
+	} 
+	#welcome-panel p:last-of-type {
+		margin-bottom: 10px;
+	}
+	label {
+		clear: none;
+		float: none;
+		width: auto;
+	}
+	input {
+		float: none;
+		margin: 0 10px 0 10px;
+		width: auto;
+	}
+	.card {
+		width: 18%;  
+	}
+	#score-board {
+		background: url('../images/score-bg.png') no-repeat;
+		background-size: 100%, 100%;
+		border: none;
+		padding: 3% 0 4% 0;
+		right: 2.5%;
+		top: 20px;
+		width: 25%;
+	} 
+	#player-turns {
+		background: url('../images/score-bg.png') no-repeat;
+		background-size: 100%, 100%;
+		border: none;
+		font-size: 100%;
+		left: 2.5%;
+		padding: 3% 0 4% 0;
+		top: 20px;
+		width: 20%;
+	} 
+	#new-game {
+		width: 40%;
+	} 
+}
+
+/* Media Queries: Large devices from 1200px wide and up */
+@media screen and (min-width: 1200px) {
+	p, ul, ol, address, td, th, legend, label, input, textarea {
+		font-size: 110%;
+	}
+	h1 {
+		font-size: 600%;
+	}	
+	#welcome-panel p:last-of-type {
+		margin-bottom: 50px;
+	}
+	.cards-container {
+		margin: 70px auto 0;
+	}
+	#score-board {
+		padding: 2% 0 4% 0;
+		width: 20%;
+	} 
+	#player-turns {
+		font-size: 130%;
+	} 
+}
+
+/* Media Queries: Large devices from 1500px wide and up */
+@media screen and (min-width: 1500px) {
+	p, ul, ol, address, td, th, legend, label, input, textarea {
+		font-size: 150%;
+	}
+	h1 {
+		font-size: 800%;
+	}
+	h2 {
+		font-size: 200%;
+	}
+	#welcome-panel h2 {
+		font-size: 300%;
+	}
+	h3 {
+		font-size: 150%;
+	}
+}
+
+/* Media Queries: Large devices from 1700px wide and up */
+@media screen and (min-width: 1700px) {
+	h1, h2, h3 {
+		margin: 0 0 20px;
+	}
+	header {
+		padding: 1.5% 2.5%;
+	}
+	#main-panel {
+		padding: 0 2.5%;
+	}
+	#welcome-panel { 
+		width: 85%;
+	} 
+	#player-turns {
+		font-size: 180%;
+	} 
+}
+
+/* Media Queries: Extra large devices from 2400px wide and up */
+@media screen and (min-width: 2250px) {
+	h1, h2, h3 {
+		margin: 0 0 25px;
+	}
+	h2 {
+		font-size: 300%;
+	}
+	h3 {
+		font-size: 200%;
+	}
+	#welcome-panel { 
+		width: 75%;
+	} 
+	#welcome-panel h2 {
+		font-size: 400%;
+	}
+	label {
+		font-size: 180%;
+	}
+	input {
+		margin: 0 50px 0 10px;
+		padding: 10px;
+	}
+	button {
+		font-size: 180%;
+		padding: 10px 30px;
+	}
+	.cards-container {
+		margin: 0 auto;
+		width: 60%;
+	}
+	#new-game {
+		font-size: 180%;
+		margin: 0 auto;
+		width: 30%;
+	} 	
+	#score-board {		
+		padding: 2% 0 3%;	
+	}  
+	#player-turns {
+		font-size: 200%;
+		padding: 2% 0 3%;
+		width: 15%;
+	} 
+	#player {
+		font-size: 110%;
+	}
+	#popup {
+		font-size: 200%;
+		height: 406px;
+		padding: 150px 30px;
+		width: 426px;
+	} 
 }
