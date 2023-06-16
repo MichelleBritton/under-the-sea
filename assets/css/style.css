@@ -54,6 +54,17 @@ h3 {
     font-size: 80%;
 }
 
+/* Hide class */
+#welcome-panel.hide {
+	scale: 0;
+	transition: all .6s;
+}
+#grid.hide, #new-game.hide, #score-board.hide, #player-turns.hide, #popup.hide { 
+	display: none;
+	opacity: 0;
+	scale: 0;	
+}
+
 /* Body */
 body {
 	background: url('../images/bg.png') no-repeat;
@@ -81,10 +92,6 @@ header {
 	padding: 5%;
 	scale: 1;
 	width: 85%;
-}
-#welcome-panel.hide {
-	scale: 0;
-	transition: all .6s;
 }
 #welcome-panel h2 {
 	font-size: 200%;
@@ -124,11 +131,6 @@ button:hover {
 	transition: opacity 3s, scale 3s;
 	transition-delay: 2s;
 	width: 100%;
-}
-#grid.hide { 
-	display: none;
-	opacity: 0;
-	scale: 0;	
 }
 .cards-container {
 	margin: 110px auto 0;
@@ -190,11 +192,6 @@ button:hover {
 	text-align: center;
 	width: 90%;
 }
-#new-game.hide {
-	display: none;
-	opacity: 0;
-	scale: 0;
-}
 #new-game:hover {
 	background: #3d6892;
 	color: #f5df8c;
@@ -215,11 +212,6 @@ button:hover {
 	transition: opacity 3s, scale 3s;
 	transition-delay: 2s;
 	width: 40%;
-}
-#score-board.hide {
-	display: none;
-	opacity: 0;
-	scale: 0;
 }
 #score-board h3 span:last-of-type {
 	color: #fff;
@@ -244,11 +236,6 @@ button:hover {
 	transition: opacity 3s, scale 3s;
 	transition-delay: 2s;
 	width: 40%;
-}
-#player-turns.hide {
-	display: none;
-	opacity: 0;
-	scale: 0;
 }
 #player {
 	color: #fff;
@@ -283,11 +270,6 @@ button:hover {
 	transition: opacity 3s, scale 3s;
 	width: 326px;
 	z-index: 10;
-}
-#popup.hide {
-	display: none;
-	opacity: 0;
-	scale: 0;
 }
 
 /* Media Queries: Small devices from 600px wide and up */
