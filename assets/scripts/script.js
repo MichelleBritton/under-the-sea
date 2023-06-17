@@ -228,29 +228,29 @@ function resetScore() {
  * data type of the clicked cards into an array ready to check for a match
  */
 function flipCards() {	
-	const turnCards = document.getElementsByClassName("card");		
-
+	const turnCards = document.getElementsByClassName("card");	
 	for (let turnCard of turnCards) {
-		turnCard.addEventListener('click', function() {	
-			cardClicks += 1;
+		turnCard.addEventListener('click', flip);
+	}
+		
+	function flip() {	
+		cardClicks += 1;
 
-			if (cardClicks <= 2) {
-				while (cardClicks) {	
-					this.classList.add("flipActive");
-					data = this.getAttribute("data-type");					
-					break;
-				} 
-				pickedCards.push(data);	
+		if (cardClicks <= 2) {
+			while (cardClicks) {	
+				this.classList.add("flipActive");
+				data = this.getAttribute("data-type");					
+				break;
 			} 
+			pickedCards.push(data);	
+		} 
 
-			if (cardClicks === 2) {
-				setTimeout(function() {
-					matchCards();
-				}, 500);
-				cardClicks = 0;
-			}
-			
-		});		
+		if (cardClicks === 2) {
+			setTimeout(function() {
+				matchCards();
+			}, 500);
+			cardClicks = 0;
+		}
 	}		
 }
 
