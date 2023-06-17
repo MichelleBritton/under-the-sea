@@ -152,8 +152,10 @@ function createGrid() {
  * Shuffle the cards, add the grid, player board and score board
  */
 function addGrid() {
+	// Shuffle the cards
 	shuffle(cards);
 
+	// Add the grid
 	let grid = createGrid();
 	document.getElementById('grid').innerHTML = grid;
 
