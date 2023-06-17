@@ -2,7 +2,6 @@
 const playerOneHtml = document.getElementById("player-one-score");
 const playerTwoHtml = document.getElementById("player-two-score");
 const message = document.getElementById("popup");
-let player = document.getElementById("player");
 let firstPlayer;
 let secondPlayer;
 let firstPlayerName;
@@ -45,6 +44,8 @@ function validateInput() {
  		firstPlayerName.innerHTML = firstPlayer;
  		secondPlayerName.innerHTML = secondPlayer;
 
+		// Add the name to the Player Board
+		const player = document.getElementById("player");
 		player.innerHTML = firstPlayer;
  	}
 }
