@@ -1,5 +1,4 @@
 // Declare Variables
-const newGame = document.getElementById("new-game");
 const playerOneHtml = document.getElementById("player-one-score");
 const playerTwoHtml = document.getElementById("player-two-score");
 const message = document.getElementById("popup");
@@ -324,6 +323,7 @@ function checkWinner() {
 /**
  * Resets the game by hiding the grid, shuffling the cards and revealing the grid again
  */
+const newGame = document.getElementById("new-game");
 newGame.addEventListener('click', resetGame);
 
 function resetGame (event) {	
