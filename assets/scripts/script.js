@@ -1,5 +1,4 @@
 // Declare Variables
-const welcome = document.getElementById("welcome-panel");
 const turnCards = document.getElementsByClassName("card");
 const newGame = document.getElementById("new-game");
 const playerOneHtml = document.getElementById("player-one-score");
@@ -179,6 +178,7 @@ function addGrid() {
  * */
 function startGame() {	
 	// Hide the welcome panel
+	const welcome = document.getElementById("welcome-panel");
     welcome.classList.add("hide");
 
 	//Set the welcome panel to display none after 1000ms to give the scale transition time to run first
