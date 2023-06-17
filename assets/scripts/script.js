@@ -18,24 +18,24 @@ let currentPlayer = getCurrentPlayer();
 // Wait for the DOM to finish loading before running the game
 // Get the button element and add an event listener to it, start the game if the validateInput function is true
 document.addEventListener("DOMContentLoaded", function() {
-	let button = document.getElementById('btn');
-	
-	button.addEventListener("click", function() {
-		if (validateInput() != false) {
-			startGame();	
-		}
-	});		
+    let button = document.getElementById('btn');
+
+    button.addEventListener("click", function() {
+        if (validateInput() != false) {
+            startGame();	
+        }
+    });		
 });
 
 /**
  * Ensure that both fields are filled out and assign names to the scoreboard
  */
 function validateInput() {
-	firstPlayer = document.getElementById('player-one').value;
- 	secondPlayer = document.getElementById('player-two').value;
+    firstPlayer = document.getElementById('player-one').value;
+    secondPlayer = document.getElementById('player-two').value;
 
 	if (firstPlayer === "" || secondPlayer === "") { 		
- 		alert("Please fill in both fields");
+ 	    alert("Please fill in both fields");
  		return false;
  	} else {
  		firstPlayerName = document.getElementById('player-one-name');
@@ -103,7 +103,6 @@ let originalCards = [
 		fish: 'whale',
 	},
 ];
-
 let clonedCards = originalCards.slice(0);
 const cards = originalCards.concat(clonedCards);
 
@@ -133,15 +132,15 @@ function createGrid() {
 	for (let card of cards) {
 		let item = `
 			<div class="card" data-type="${card.fish}">
-  				<div class="card-inner">
-                  <div class="card-front">
-                  <img src="${card.back}">
-              </div>
-              <div class="card-back">
-                  <img src="${card.front}">
-              </div>
-                </div>
-            </div>
+				<div class="card-inner">
+					<div class="card-front">
+						<img src="${card.back}">
+					</div>
+					<div class="card-back">
+						<img src="${card.front}">
+					</div>
+				</div>
+			</div>
 		`;
 		var result = html += item;
 	}
@@ -231,6 +230,7 @@ function resetScore() {
  */
 function flipCards() {	
 	const turnCards = document.getElementsByClassName("card");		
+	
 	for (let turnCard of turnCards) {
 		turnCard.addEventListener('click', function() {	
 			cardClicks += 1;
@@ -261,7 +261,7 @@ function flipCards() {
  * the counter, empty the array and get the current player
  */
 function matchCards() {
-	const activeCards = document.querySelectorAll(".flipActive");		
+	const activeCards = document.querySelectorAll(".flipActive");	
 
 	if (pickedCards[0] === pickedCards[1]) {
 		for (let activeCard of activeCards) {
