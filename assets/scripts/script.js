@@ -229,30 +229,31 @@ function resetScore() {
  */
 function flipCards() {	
 	const turnCards = document.getElementsByClassName("card");	
+	// Add event listener to all of the cards
 	for (let turnCard of turnCards) {
 		turnCard.addEventListener('click', flip);
 	}
-		
-	function flip() {	
-		cardClicks += 1;
-
-		if (cardClicks <= 2) {
-			while (cardClicks) {	
-				this.classList.add("flipActive");
-				data = this.getAttribute("data-type");					
-				break;
-			} 
-			pickedCards.push(data);	
-		} 
-
-		if (cardClicks === 2) {
-			setTimeout(function() {
-				matchCards();
-			}, 500);
-			cardClicks = 0;
-		}
-	}		
 }
+
+function flip() {	
+	cardClicks += 1;
+
+	if (cardClicks <= 2) {
+		while (cardClicks) {	
+			this.classList.add("flipActive");
+			data = this.getAttribute("data-type");					
+			break;
+		} 
+		pickedCards.push(data);	
+	} 
+
+	if (cardClicks === 2) {
+		setTimeout(function() {
+			matchCards();
+		}, 500);
+		cardClicks = 0;
+	}
+}		
 
 /** 
  * Check the two data types in the array to see if they match,
