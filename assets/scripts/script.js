@@ -185,6 +185,7 @@ function startGame() {
     // Create the grid 
 	addGrid();
 
+	// Play the game
 	flipCards();
 }
 
