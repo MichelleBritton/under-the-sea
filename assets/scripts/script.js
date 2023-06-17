@@ -127,9 +127,8 @@ function shuffle(a) {
  * Create HTML Grid and populate it with data from the shuffled array
  */
 function createGrid() {
-	let html = `
-		<div class="cards-container">
-	`;
+	let html = `<div class="cards-container">`;
+	let closingHtml = `</div>`;
 
 	for (let card of cards) {
 		let item = `
@@ -146,11 +145,7 @@ function createGrid() {
 		`;
 		var result = html += item;
 	}
-	return result;
-
-	html =+ `
-		</div>
-	`;	
+	return result + closingHtml;
 }
 
 /** 
