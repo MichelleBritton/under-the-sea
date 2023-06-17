@@ -1,5 +1,4 @@
 // Declare Variables
-const turnCards = document.getElementsByClassName("card");
 const newGame = document.getElementById("new-game");
 const playerOneHtml = document.getElementById("player-one-score");
 const playerTwoHtml = document.getElementById("player-two-score");
@@ -232,7 +231,8 @@ function resetScore() {
  * Turn the cards over when clicked on, count the clicks and push the 
  * data type of the clicked cards into an array ready to check for a match
  */
-function flipCards() {			
+function flipCards() {	
+	const turnCards = document.getElementsByClassName("card");		
 	for (let turnCard of turnCards) {
 		turnCard.addEventListener('click', function() {	
 			cardClicks += 1;
