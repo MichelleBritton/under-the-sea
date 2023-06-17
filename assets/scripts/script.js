@@ -2,6 +2,7 @@
 const playerOneHtml = document.getElementById("player-one-score");
 const playerTwoHtml = document.getElementById("player-two-score");
 const message = document.getElementById("popup");
+const player = document.getElementById("player");
 let firstPlayer;
 let secondPlayer;
 let firstPlayerName;
@@ -45,7 +46,6 @@ function validateInput() {
  		secondPlayerName.innerHTML = secondPlayer;
 
 		// Add the name to the Player Board
-		const player = document.getElementById("player");
 		player.innerHTML = firstPlayer;
  	}
 }
@@ -230,7 +230,7 @@ function resetScore() {
  */
 function flipCards() {	
 	const turnCards = document.getElementsByClassName("card");		
-	
+
 	for (let turnCard of turnCards) {
 		turnCard.addEventListener('click', function() {	
 			cardClicks += 1;
