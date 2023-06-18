@@ -64,5 +64,10 @@ The panel in the top left hand corner indicates whose turn it currently is. This
 
 ![Screenshot of the player's board](documentation/screenshots/screenshot-players.png)
 
+#### Score Board
+The Score Board is located in the top right hand corner. It displays both of the player's names and indicates their current score, which is updated when a user has finished their turn.
+
+![Screenshot of the score board](documentation/screenshots/screenshot-score.png)
+
 ### Features Left to Implement
 
