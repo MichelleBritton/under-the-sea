@@ -74,5 +74,10 @@ Pop up windows appear when a user successfully matches two cards and also at the
 
 ![Screenshot of the pop ups](documentation/screenshots/screenshot-popups.png)
 
+#### New Game
+Underneath the grid is a button, which if clicked on, will reset the grid, score board and player board so that the players can start a fresh game.
+
+![Screenshot of the new game button](documentation/screenshots/screenshot-new.png)
+
 ### Features Left to Implement
 
