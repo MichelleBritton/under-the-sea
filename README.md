@@ -35,6 +35,7 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
     - [Lighthouse](#lighthouse)
     - [Full Testing](#full-testing)
 - [Deployment](#deployment) 
+- [Local Development](#local-development)
 - [Credits](#credits)
     - [Code Used](#code-used)
     - [Content](#content) 
@@ -132,3 +133,30 @@ This website was built with HTML, CSS and JavaScript.
 - [Browserstack](https://www.browserstack.com/) - for cross browser testing
 
 
+## Deployment 
+
+GitHub Pages was used for deployment of the website directly from the GitHub repository by following these steps: 
+
+- Log in to GitHub
+- Locate the repository that you are deploying
+- Click on "Settings"
+- Click on "Pages"
+- Select the source to deploy from, in this case it was "Deploy from a branch"
+- Select the branch, in this case it was the "main" branch
+- Select the root folder
+- Click on "Save".  It may take a few minutes but your site is now live and the URL will appear.
+
+## Local Development
+To create a local copy of the repository by cloning it:
+
+- Log in to GitHub
+- Locate the repository that you are cloning
+- Click on "Code"
+- Select the method of cloning and copy the link shown
+- Open the terminal and change the current working directory to the location you want to use for the cloned directory.
+- Type "git clone" into the terminal and paste the link that you copied and press Enter
+
+To fork the repository: 
+- Log in to GitHub
+- Locate the repository
+- Click on the "Fork" button at the top
