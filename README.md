@@ -44,8 +44,6 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
 
 ## Features
 ### Existing Features
-## Features
-### Existing Features
 #### Heading
 The heading is located centrally at the top of the page using a large font with a text shadow so that it stands out from the background image enabling the user to see the name of the game easily.
 
@@ -54,5 +52,3 @@ The heading is located centrally at the top of the page using a large font with 
 
 ### Features Left to Implement
 
-
-### Features Left to Implement
