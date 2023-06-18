@@ -69,5 +69,10 @@ The Score Board is located in the top right hand corner. It displays both of the
 
 ![Screenshot of the score board](documentation/screenshots/screenshot-score.png)
 
+#### Pop Ups
+Pop up windows appear when a user successfully matches two cards and also at the end of the game, to indicate who the winner is or to declare the game a draw. 
+
+![Screenshot of the pop ups](documentation/screenshots/screenshot-popups.png)
+
 ### Features Left to Implement
 
