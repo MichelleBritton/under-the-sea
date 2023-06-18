@@ -12,7 +12,7 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
 
 ## CONTENTS
 
-- Features
+- [Features](#features)
 - [Design](#design)
     - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
@@ -23,8 +23,8 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
 - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Programs Used](#programs-used)
-- User Experience
-    User Stories
+- [User Experience](#user-experience)
+    - [User Stories](#user-stories)
 - [Testing](#testing)
     - [W3C Validator](#w3c-validator)
     - [Jigsaw CSS Validator](#jigsaw-css-validator)
