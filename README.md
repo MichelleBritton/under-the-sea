@@ -20,7 +20,6 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
     - [Typography](#typography)
     - [Imagery](#imagery)
     - [Wireframes](#wireframes)
-    - [Features](#features)
     - [Accessibility](#accessibility)
 - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
