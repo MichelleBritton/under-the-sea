@@ -13,6 +13,8 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
 ## CONTENTS
 
 - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [Features Left to Implement](#features-left-to-implement)
 - [Design](#design)
     - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
@@ -39,3 +41,18 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
     - [Content](#content) 
     - [Media](#media) 
 - [Acknowledgments](#acknowledgements)
+
+## Features
+### Existing Features
+## Features
+### Existing Features
+#### Heading
+The heading is located centrally at the top of the page using a large font with a text shadow so that it stands out from the background image enabling the user to see the name of the game easily.
+
+![Screenshot of the heading](documentation/screenshots/screenshot-heading.png)
+
+
+### Features Left to Implement
+
+
+### Features Left to Implement
