@@ -80,4 +80,5 @@ Underneath the grid is a button, which if clicked on, will reset the grid, score
 ![Screenshot of the new game button](documentation/screenshots/screenshot-new.png)
 
 ### Features Left to Implement
+- In the event of a draw, you could present the users will tie break muiltiple choice questions based on a marine theme, such as "What type of fish was Nemo?"
 
