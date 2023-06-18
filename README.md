@@ -110,3 +110,26 @@ To ensure that the website is as accessible as possible, I have:
 - Provided alt attributes for all images 
 - Ensured that there is a good colour contrast throughout the site whilst maintaining the integrity of the design 
 
+## Technologies Used 
+### Languages Used 
+This website was built with HTML, CSS and JavaScript.
+
+### Programs Used
+
+- [Figma](https://www.figma.com/) - for creating wireframes
+- [Git](https://git-scm.com/) - a version control system for tracking changes
+- [GitHub](https://github.com/) - a code hosting platform for version control
+- [Gitpod](https://www.gitpod.io/) - a cloud development environment
+- [GitHub Pages](https://pages.github.com/) - for deployment of website
+- [Google Fonts](https://fonts.google.com/) - catalogue of open source fonts
+- [TinyPNG](https://tinypng.com/) - to compress images
+- [Am I Responsive?](https://ui.dev/amiresponsive) - to generate a screenshot of the website on multiple devices
+- [Shields](https://shields.io/) - to generate badges for inclusion in the README field
+- [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - for testing and debugging the website
+- [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) - for accessibility and performance reporting
+- [The W3C Markup Validation Service](https://validator.w3.org/) - for validating HTML 
+- [Jigsaw](https://jigsaw.w3.org/css-validator/) - for validating CSS
+- [JSHint](https://jshint.com/) - for validating JavaScript
+- [Browserstack](https://www.browserstack.com/) - for cross browser testing
+
+
