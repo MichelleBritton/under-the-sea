@@ -133,10 +133,10 @@ function createGrid() {
 			<div class="card" data-type="${card.fish}">
 				<div class="card-inner">
 					<div class="card-front">
-						<img src="${card.back}">
+						<img src="${card.back}" alt="Under the sea scene">
 					</div>
 					<div class="card-back">
-						<img src="${card.front}">
+						<img src="${card.front}" alt="${card.fish}">
 					</div>
 				</div>
 			</div>
