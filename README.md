@@ -59,5 +59,10 @@ There is a grid of 20 cards. Initially, only the back of the cards are shown. Wh
 
 ![Screenshot of the grid](documentation/screenshots/screenshot-grid.png)
 
+#### Player's Turn Board
+The panel in the top left hand corner indicates whose turn it currently is. This will automatically change when either the cards are returned to their original state or after the pop up has disappeared.
+
+![Screenshot of the player's board](documentation/screenshots/screenshot-players.png)
+
 ### Features Left to Implement
 
