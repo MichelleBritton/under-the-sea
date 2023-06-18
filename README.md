@@ -54,6 +54,10 @@ The welcome panel is the initial screen that you see when you visit the site. It
 
 ![Screenshot of the welcome panel](documentation/screenshots/screenshot-welcome.png)
 
+#### The Game Area
+There is a grid of 20 cards. Initially, only the back of the cards are shown. When the user clicks on a card it will flip over to reveal an image. The user must click on two cards at a time to see if they match. If they don't match, the cards will flip back over to their original state. If they do match, a pop up will appear telling them that they have a match.
+
+![Screenshot of the grid](documentation/screenshots/screenshot-grid.png)
 
 ### Features Left to Implement
 
