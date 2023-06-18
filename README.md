@@ -82,3 +82,23 @@ Underneath the grid is a button, which if clicked on, will reset the grid, score
 ### Features Left to Implement
 - In the event of a draw, you could present the users will tie break muiltiple choice questions based on a marine theme, such as "What type of fish was Nemo?"
 
+## Design
+
+### Colour Scheme
+
+I chose the theme as I thought the bright colours would be attractive to young children, and if they have seen the film "Finding Nemo" they may find it a little more interesting. The colours used throughout the site were chosen as they match the colours contained within the background image.
+
+### Typography
+
+The fonts used were imported from Google Fonts. The main font used throughout the site is Atma, whilst Raleway has been used for the paragraphs contained within the Welcome Panel
+
+### Imagery
+
+Images used throughout the site were purchased from [iStock](https://www.istockphoto.com/).
+
+### Wireframes
+
+A wireframe was created using the [Figma website](https://www.figma.com/).
+
+[Under the Sea wireframe](https://www.figma.com/proto/RlWv7VijrgxyrQ0Vkw2zgw/Under-the-Sea?type=design&node-id=19-34&scaling=min-zoom&page-id=14%3A2&starting-point-node-id=19%3A84)
+
