@@ -49,6 +49,11 @@ The heading is located centrally at the top of the page using a large font with 
 
 ![Screenshot of the heading](documentation/screenshots/screenshot-heading.png)
 
+#### Welcome Panel 
+The welcome panel is the initial screen that you see when you visit the site. It contains information explaining the aim of the game, how to play the game and how to get started. To start playing the game, it requires the two players to enter their names into the input boxes and click on the "Start" button. If they do not complete both boxes, an alert will appear asking them to fill in both fields. Once the button is clicked, the welcome panel will fade out and the grid of cards will appear.
+
+![Screenshot of the welcome panel](documentation/screenshots/screenshot-welcome.png)
+
 
 ### Features Left to Implement
 
