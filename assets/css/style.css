@@ -188,8 +188,7 @@ button:hover {
 	padding: 10px 30px;
 	transform: scale(1);
 	transform: scale(1);
-	transition: all 6s ease-in;
-	transition-delay: 1s;
+	transition: all .3s ease-in;
 	text-align: center;
 	width: 90%;
 }
