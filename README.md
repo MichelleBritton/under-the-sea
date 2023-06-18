@@ -10,9 +10,7 @@ The Under the Sea Memory Game is an interactive game for two players. The purpos
 
 ## CONTENTS
 
-- [User Experience](#user-experience)
-    - [Initial Discussion](#initial-discussion)
-    - [User Stories](#user-stories)
+- Features
 - [Design](#design)
     - [Colour Scheme](#colour-scheme)
     - [Typography](#typography)
@@ -23,7 +21,8 @@ The Under the Sea Memory Game is an interactive game for two players. The purpos
 - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Programs Used](#programs-used)
-- [Deployment](#deployment) 
+- User Experience
+    User Stories
 - [Testing](#testing)
     - [W3C Validator](#w3c-validator)
     - [Jigsaw CSS Validator](#jigsaw-css-validator)
@@ -32,8 +31,9 @@ The Under the Sea Memory Game is an interactive game for two players. The purpos
     - [Testing User Stories](#testing-user-stories)
     - [Lighthouse](#lighthouse)
     - [Full Testing](#full-testing)
-    - [Credits](#credits)
+- [Deployment](#deployment) 
+- [Credits](#credits)
     - [Code Used](#code-used)
     - [Content](#content) 
     - [Media](#media) 
-    - [Acknowledgments](#acknowledgements)
+- [Acknowledgments](#acknowledgements)
