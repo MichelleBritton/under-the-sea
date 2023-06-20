@@ -28,7 +28,6 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
     - [Validator Testing](#validator-testing)
     - [Solved Bugs](#solved-bugs)
     - [Unfixed Bugs](#unfixed-bugs)
-    - [Testing User Stories](#testing-user-stories)
     - [Lighthouse](#lighthouse)
     - [Full Testing](#full-testing)
 - [Deployment](#deployment) 
