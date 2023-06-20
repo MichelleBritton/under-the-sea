@@ -24,18 +24,14 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
 - [Technologies Used](#technologies-used)
     - [Languages Used](#languages-used)
     - [Programs Used](#programs-used)
-- [User Experience](#user-experience)
-    - [User Stories](#user-stories)
 - [Testing](#testing)
-    - [W3C Validator](#w3c-validator)
-    - [Jigsaw CSS Validator](#jigsaw-css-validator)
+    - [Validator Testing](#validator-testing)
     - [Solved Bugs](#solved-bugs)
-    - [Known Bugs](#known-bugs)
+    - [Unfixed Bugs](#unfixed-bugs)
     - [Testing User Stories](#testing-user-stories)
     - [Lighthouse](#lighthouse)
     - [Full Testing](#full-testing)
 - [Deployment](#deployment) 
-- [Local Development](#local-development)
 - [Credits](#credits)
     - [Code Used](#code-used)
     - [Content](#content) 
@@ -138,15 +134,16 @@ Chrome Developer Tools were used throughout the course of development, the conso
 ### Validator Testing
 
 W3C HTML Validation
-No errors were returned when passing through the official W3C Validator
+No errors were returned when passing through the official W3C Validator.
 ![Screenshot of the HTML validation](documentation/screenshots/screenshot-html-valid.png)
 
 Jigsaw CSS Validator
-No errors were found when passing through the official Jigsaw validator
+No errors were found when passing through the official Jigsaw validator.
 ![Screenshot of the CSS validation](documentation/screenshots/screenshot-css-valid.png)
 
 JavaScript
-No errors were found when passing through the official Jshint validator
+No errors were found when passing through the official Jshint validator.
+
 The following metrics were returned: 
 - There are 25 functions in this file.
 - Function with the largest signature take 1 arguments, while the median is 0.
@@ -158,7 +155,6 @@ I found the following issues during testing.
 
 - If you click on the same card twice, it alerts you that there is a match.
 - After clicking on two cards, it is possible to carry on clicking on other cards.
-
 
 ### Unfixed Bugs
 No unfixed bugs.
