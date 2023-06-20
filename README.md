@@ -132,6 +132,36 @@ This website was built with HTML, CSS and JavaScript.
 - [JSHint](https://jshint.com/) - for validating JavaScript
 - [Browserstack](https://www.browserstack.com/) - for cross browser testing
 
+## Testing
+Chrome Developer Tools were used throughout the course of development, the console was particularly useful when debugging the code.
+
+### Validator Testing
+
+W3C HTML Validation
+No errors were returned when passing through the official W3C Validator
+![Screenshot of the HTML validation](documentation/screenshots/screenshot-html-valid.png)
+
+Jigsaw CSS Validator
+No errors were found when passing through the official Jigsaw validator
+![Screenshot of the CSS validation](documentation/screenshots/screenshot-css-valid.png)
+
+JavaScript
+No errors were found when passing through the official Jshint validator
+The following metrics were returned: 
+- There are 25 functions in this file.
+- Function with the largest signature take 1 arguments, while the median is 0.
+- Largest function has 14 statements in it, while the median is 3.
+- The most complex function has a cyclomatic complexity value of 5 while the median is 1.
+
+### Solved Bugs
+I found the following issues during testing. 
+
+- If you click on the same card twice, it alerts you that there is a match.
+- After clicking on two cards, it is possible to carry on clicking on other cards.
+
+
+### Unfixed Bugs
+No unfixed bugs.
 
 ## Deployment 
 
