@@ -229,14 +229,11 @@ function resetScore() {
  */
 const turnCards = document.getElementsByClassName("card");	
 const doubleClicks = document.getElementsByClassName("stopClick");
-let isProcessing = true;
 
 function flipCards() {	
-	// Add event listener to all of the cards if isProcessing is true	
+	// Add event listener to all of the cards
 	for (let turnCard of turnCards) {
-		if (isProcessing) {
-			turnCard.addEventListener('click', flip);
-		}
+		turnCard.addEventListener('click', flip);
 	}	
 }	
 
@@ -246,26 +243,27 @@ function disableClick() {
 	}	
 }
 
-function flip() {		
-	cardClicks += 1;
+let isPlaying = true;
 
-	if (cardClicks <= 2) {
-		while (cardClicks) {				
+function flip() {
+	if (isPlaying) {
+		if (cardClicks < 2) {
+		// less than 2 clicks?
 			this.classList.add("flipActive", "stopClick");			
+			data = this.getAttribute("data-type");		
+			pickedCards.push(data);	
 			disableClick();
-			data = this.getAttribute("data-type");			
-			break;
-		} 
-		pickedCards.push(data);		
-	} 
+			cardClicks += 1;
+			// are there now 2 clicks?
+			if (cardClicks === 2) {
+				isPlaying = false;
+				setTimeout(function() {
+					matchCards();
+				}, 1000);
+			}
+		}
 
-	if (cardClicks === 2) {	
-		isProcessing = false;
-		setTimeout(function() {
-			matchCards();
-		}, 500);
-		cardClicks = 0;
-	}	
+	}
 }		
 
 /** 
@@ -275,7 +273,7 @@ function flip() {
  */
 function matchCards() {
 	const activeCards = document.querySelectorAll(".flipActive");
-	
+
 	if (pickedCards[0] === pickedCards[1]) {
 		for (let activeCard of activeCards) {
 			activeCard.classList.add("is-matched");
@@ -297,11 +295,14 @@ function matchCards() {
 		}
 	}, 400);
 
+	cardClicks = 0;
 	pickedCards = [];
 	counter ++;
 	getCurrentPlayer();
-	isProcessing = true;
-	flipCards();	
+	isPlaying = true;
+	// Return to flipCards to re-enable click listeners
+	flipCards();
+	
 }
 
 // Check for a winner
