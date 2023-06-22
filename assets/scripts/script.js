@@ -263,11 +263,14 @@ function flip() {
 		this.classList.add("flipActive", "stopClick");			
 		data = this.getAttribute("data-type");		
 		pickedCards.push(data);	
+		// Prevent double click
 		disableClick();
 		cardClicks += 1;
 		// are there now 2 clicks?
 		if (cardClicks === 2) {
+			// Stop more than 2 cards being clicked on
 			isPlaying = false;
+			// Match the cards
 			setTimeout(function() {
 				matchCards();
 			}, 1000);
@@ -283,6 +286,7 @@ function flip() {
 function matchCards() {
 	const activeCards = document.querySelectorAll(".flipActive");
 
+	// If the two values in the array match
 	if (pickedCards[0] === pickedCards[1]) {
 		for (let activeCard of activeCards) {
 			activeCard.classList.add("is-matched");
@@ -298,12 +302,14 @@ function matchCards() {
 		checkWinner();
 	} 
 
+	// Otherwise just turn the cards back over
 	setTimeout(function() {
 		for (let activeCard of activeCards) {
 			activeCard.classList.remove("flipActive", "stopClick");
 		}
 	}, 400);
 
+	// Reset
 	cardClicks = 0;
 	pickedCards = [];
 	counter ++;
@@ -318,6 +324,7 @@ function matchCards() {
 function checkWinner() {
 	const matchedCards = document.querySelectorAll(".is-matched");
 
+	// If all the cards have been turned over, show result of the game
 	if (matchedCards.length === 20){
 		if (playerOneScore > playerTwoScore) {
 			message.classList.remove("hide");
