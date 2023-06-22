@@ -229,18 +229,21 @@ function resetScore() {
  */
 const turnCards = document.getElementsByClassName("card");	
 const doubleClicks = document.getElementsByClassName("stopClick");
+let isProcessing = true;
 
-function flipCards() {		
-	// Add event listener to all of the cards
+function flipCards() {	
+	// Add event listener to all of the cards if isProcessing is true	
 	for (let turnCard of turnCards) {
-		turnCard.addEventListener('click', flip);
-	}
+		if (isProcessing) {
+			turnCard.addEventListener('click', flip);
+		}
+	}	
 }	
 
 function disableClick() {
 	for (let doubleClick of doubleClicks) {
 		doubleClick.removeEventListener('click', flip);
-	}
+	}	
 }
 
 function flip() {		
@@ -256,12 +259,13 @@ function flip() {
 		pickedCards.push(data);		
 	} 
 
-	if (cardClicks === 2) {		
+	if (cardClicks === 2) {	
+		isProcessing = false;
 		setTimeout(function() {
 			matchCards();
 		}, 500);
 		cardClicks = 0;
-	}
+	}	
 }		
 
 /** 
@@ -271,7 +275,7 @@ function flip() {
  */
 function matchCards() {
 	const activeCards = document.querySelectorAll(".flipActive");
-
+	
 	if (pickedCards[0] === pickedCards[1]) {
 		for (let activeCard of activeCards) {
 			activeCard.classList.add("is-matched");
@@ -296,8 +300,8 @@ function matchCards() {
 	pickedCards = [];
 	counter ++;
 	getCurrentPlayer();
-	flipCards();
-	return;
+	isProcessing = true;
+	flipCards();	
 }
 
 // Check for a winner
