@@ -255,23 +255,23 @@ function disableClick() {
  * data type of the clicked cards into an array ready to check for a match
  */
 function flip() {
-	if (isPlaying) {
-		if (cardClicks < 2) {
-		// less than 2 clicks?
-			this.classList.add("flipActive", "stopClick");			
-			data = this.getAttribute("data-type");		
-			pickedCards.push(data);	
-			disableClick();
-			cardClicks += 1;
-			// are there now 2 clicks?
-			if (cardClicks === 2) {
-				isPlaying = false;
-				setTimeout(function() {
-					matchCards();
-				}, 1000);
-			}
+	if (!isPlaying) {
+		return;
+	}
+	if (cardClicks < 2) {
+	// less than 2 clicks?
+		this.classList.add("flipActive", "stopClick");			
+		data = this.getAttribute("data-type");		
+		pickedCards.push(data);	
+		disableClick();
+		cardClicks += 1;
+		// are there now 2 clicks?
+		if (cardClicks === 2) {
+			isPlaying = false;
+			setTimeout(function() {
+				matchCards();
+			}, 1000);
 		}
-
 	}
 }		
 
