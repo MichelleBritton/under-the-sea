@@ -14,6 +14,7 @@ let counter = 0;
 let cardClicks = 0;
 let data;
 let pickedCards = [];
+let isPlaying = true;
 
 // Wait for the DOM to finish loading before running the game
 // Get the button element and add an event listener to it, start the game if the validateInput function is true
@@ -206,7 +207,9 @@ function getCurrentPlayer() {
 	return;
 }
 
-// Update the Score Board
+/**
+ * Update the Score Board for each player
+ */ 
 function updateScore() {
 	if (playerId === 1) {
 		playerOneHtml.innerHTML = ++playerOneScore;
@@ -215,7 +218,9 @@ function updateScore() {
 	}
 }
 
-// Reset the Score Board
+/**
+ * Reset the Score Board to zero
+ */ 
 function resetScore() {
 	playerOneScore = 0;
 	playerTwoScore = 0;
@@ -224,27 +229,31 @@ function resetScore() {
 }
 
 /**
- * Turn the cards over when clicked on, count the clicks and push the 
- * data type of the clicked cards into an array ready to check for a match
+ * Add event listener to all cards
  */
-const turnCards = document.getElementsByClassName("card");	
-const doubleClicks = document.getElementsByClassName("stopClick");
-
 function flipCards() {	
-	// Add event listener to all of the cards
+	const turnCards = document.getElementsByClassName("card");	
+
 	for (let turnCard of turnCards) {
 		turnCard.addEventListener('click', flip);
 	}	
 }	
 
+/**
+ * Remove event listener from cards currently enabled to prevent a false match
+ */
 function disableClick() {
+	const doubleClicks = document.getElementsByClassName("stopClick");
+
 	for (let doubleClick of doubleClicks) {
 		doubleClick.removeEventListener('click', flip);
 	}	
 }
 
-let isPlaying = true;
-
+/**
+ * Turn the cards over when clicked on, count the clicks and push the 
+ * data type of the clicked cards into an array ready to check for a match
+ */
 function flip() {
 	if (isPlaying) {
 		if (cardClicks < 2) {
