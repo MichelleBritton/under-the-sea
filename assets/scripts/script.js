@@ -227,27 +227,36 @@ function resetScore() {
  * Turn the cards over when clicked on, count the clicks and push the 
  * data type of the clicked cards into an array ready to check for a match
  */
-function flipCards() {	
-	const turnCards = document.getElementsByClassName("card");	
+const turnCards = document.getElementsByClassName("card");	
+const doubleClicks = document.getElementsByClassName("stopClick");
+
+function flipCards() {		
 	// Add event listener to all of the cards
 	for (let turnCard of turnCards) {
 		turnCard.addEventListener('click', flip);
 	}
+}	
+
+function disableClick() {
+	for (let doubleClick of doubleClicks) {
+		doubleClick.removeEventListener('click', flip);
+	}
 }
 
-function flip() {	
+function flip() {		
 	cardClicks += 1;
 
 	if (cardClicks <= 2) {
-		while (cardClicks) {	
-			this.classList.add("flipActive");
-			data = this.getAttribute("data-type");					
+		while (cardClicks) {				
+			this.classList.add("flipActive", "stopClick");			
+			disableClick();
+			data = this.getAttribute("data-type");			
 			break;
 		} 
-		pickedCards.push(data);	
+		pickedCards.push(data);		
 	} 
 
-	if (cardClicks === 2) {
+	if (cardClicks === 2) {		
 		setTimeout(function() {
 			matchCards();
 		}, 500);
@@ -261,7 +270,7 @@ function flip() {
  * the counter, empty the array and get the current player
  */
 function matchCards() {
-	const activeCards = document.querySelectorAll(".flipActive");	
+	const activeCards = document.querySelectorAll(".flipActive");
 
 	if (pickedCards[0] === pickedCards[1]) {
 		for (let activeCard of activeCards) {
@@ -280,13 +289,14 @@ function matchCards() {
 
 	setTimeout(function() {
 		for (let activeCard of activeCards) {
-			activeCard.classList.remove("flipActive");
+			activeCard.classList.remove("flipActive", "stopClick");
 		}
 	}, 400);
 
 	pickedCards = [];
 	counter ++;
 	getCurrentPlayer();
+	flipCards();
 	return;
 }
 
