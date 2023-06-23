@@ -111,10 +111,12 @@ input {
 	padding: 5px;
 	width: 70%;
 }
+.clear {
+	clear: both;
+}
 button {
 	background: #63b08c;
 	border-radius: 20px;
-	clear: both;
 	cursor: pointer;
 	font: 600 130% 'Atma', cursive;
 	padding: 5px 30px;
