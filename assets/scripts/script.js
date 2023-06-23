@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
     let button = document.getElementById('btn');
 
     button.addEventListener("click", function() {
-        if (validateInput() != false) {
-            startGame();	
-        }
+		if (validateInput() != false) {
+        	startGame();	
+    	}
     });		
 });
 
@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
  * Ensure that both fields are filled out and assign names to the scoreboard
  */
 function validateInput() {
-    firstPlayer = document.getElementById('player-one').value;
-    secondPlayer = document.getElementById('player-two').value;
+	firstPlayer = document.getElementById('player-one').value;
+	secondPlayer = document.getElementById('player-two').value;
 
 	if (firstPlayer === "" || secondPlayer === "") { 		
- 	    alert("Please fill in both fields");
- 		return false;
- 	} else {
+		alert("Please fill in both fields");
+		return false;
+	} else {
  		firstPlayerName = document.getElementById('player-one-name');
  		secondPlayerName = document.getElementById('player-two-name');
 
@@ -50,7 +50,7 @@ function validateInput() {
 
 		// Add the name to the Player Board
 		player.innerHTML = firstPlayer;
- 	}
+	}
 }
 
 // Create an array of objects to add images.  Clone the array and then join them together to create pairs of cards
@@ -115,14 +115,14 @@ const cards = originalCards.concat(clonedCards);
  * Fisher-Yates shuffle algorithm
  */
 function shuffle(a) {
-    var j, x, i;
-    for (i = a.length - 1; i > 0; i--) {
-        j = Math.floor(Math.random() * (i + 1));
-        x = a[i];
-        a[i] = a[j];
-        a[j] = x;
-    }
-    return a;
+	var j, x, i;
+	for (i = a.length - 1; i > 0; i--) {
+		j = Math.floor(Math.random() * (i + 1));
+		x = a[i];
+		a[i] = a[j];
+		a[j] = x;
+	}
+	return a;
 }
 
 /**
@@ -163,12 +163,12 @@ function addGrid() {
 
 	/* Set the grid and player board to appear after 1000ms to give the welcome panel enough time to transition and display: none
 	and allow time for grid transitions to run */
-    setTimeout(function() {
+	setTimeout(function() {
     	document.getElementById('grid').classList.remove("hide");
     	document.getElementById('new-game').classList.remove("hide");
 		document.getElementById("player-turns").classList.remove("hide");
 		document.getElementById("score-board").classList.remove("hide");
-    }, 1000);
+	}, 1000);
 }
 
 /**
@@ -177,14 +177,14 @@ function addGrid() {
 function startGame() {	
 	// Hide the welcome panel
 	const welcome = document.getElementById("welcome-panel");
-    welcome.classList.add("hide");
+	welcome.classList.add("hide");
 
 	//Set the welcome panel to display none after 1000ms to give the scale transition time to run first
-    setTimeout(function() {
-    	welcome.style.display = "none";
-    }, 1000);
+	setTimeout(function() {
+		welcome.style.display = "none";
+	}, 1000);
 
-    // Create the grid 
+	// Create the grid 
 	addGrid();
 
 	// Play the game
@@ -319,8 +319,7 @@ function matchCards() {
 	getCurrentPlayer();
 	isPlaying = true;
 	// Return to flipCards to re-enable click listeners
-	flipCards();
-	
+	flipCards();	
 }
 
 // Check for a winner
