@@ -134,20 +134,9 @@ Chrome Developer Tools were used throughout the course of development, the conso
 ### Validator Testing
 [W3C HTML Validation](https://github.com/MichelleBritton/under-the-sea/blob/main/TESTING.md/#w3c-validator)
 
-[Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmichellebritton.github.io%2Funder-the-sea%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+[Jigsaw CSS Validator](https://github.com/MichelleBritton/under-the-sea/blob/main/TESTING.md/#jigsaw-css-validator)
 
-No errors were found when passing through the official Jigsaw validator.
-![Screenshot of the CSS validation](documentation/screenshots/screenshot-css-valid.png)
-
-JavaScript
-
-No errors were found when passing through the official Jshint validator.
-
-The following metrics were returned: 
-- There are 26 functions in this file.
-- Function with the largest signature take 1 arguments, while the median is 0.
-- Largest function has 16 statements in it, while the median is 3.
-- The most complex function has a cyclomatic complexity value of 5 while the median is 1.
+[JavaScript](https://github.com/MichelleBritton/under-the-sea/blob/main/TESTING.md/#javascript-validator)
 
 ### Solved Bugs
 I asked four other people to test the game fully but none found any issues, other than one person's suggestion that I add music and/or sound effects.  However, I found the following issues during testing:
