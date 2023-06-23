@@ -126,6 +126,7 @@ This website was built with HTML, CSS and JavaScript.
 - [Jigsaw](https://jigsaw.w3.org/css-validator/) - for validating CSS
 - [JSHint](https://jshint.com/) - for validating JavaScript
 - [Browserstack](https://www.browserstack.com/) - for cross browser testing
+- [Birme] - Convert images to WebP format
 
 ## Testing
 Chrome Developer Tools were used throughout the course of development, the console was particularly useful when debugging the code.
@@ -133,14 +134,17 @@ Chrome Developer Tools were used throughout the course of development, the conso
 ### Validator Testing
 
 [W3C HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmichellebritton.github.io%2Funder-the-sea%2F)
+
 No errors were returned when passing through the official W3C Validator.
 ![Screenshot of the HTML validation](documentation/screenshots/screenshot-html-valid.png)
 
 [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmichellebritton.github.io%2Funder-the-sea%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
 No errors were found when passing through the official Jigsaw validator.
 ![Screenshot of the CSS validation](documentation/screenshots/screenshot-css-valid.png)
 
 JavaScript
+
 No errors were found when passing through the official Jshint validator.
 
 The following metrics were returned: 
@@ -157,6 +161,18 @@ I found the following issues during testing.
 
 ### Unfixed Bugs
 No unfixed bugs.
+
+### Lighthouse
+In order to test performance, accessibility, best practices and SEO, I used Lighthouse within the Chrome Developer Tools. 
+
+- Initial and final testing for Desktop
+![Screenshot of the Lighthouse Desktop](documentation/screenshots/screenshot-lighthouse-d.png)
+
+- Initial and final testing for Mobile
+![Screenshot of the Lighthouse Mobile](documentation/screenshots/screenshot-lighthouse-m.png)
+
+- Suggestions:
+Serve images in next-gen formats such as WebP and AVIF which means faster downloads and less data consumption. I have converted images to WebP format using Birme.
 
 ## Deployment 
 
