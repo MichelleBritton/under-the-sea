@@ -34,7 +34,6 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
 - [Credits](#credits)
     - [Code Used](#code-used)
     - [Content](#content) 
-    - [Media](#media) 
 - [Acknowledgments](#acknowledgements)
 
 ## Features
@@ -76,6 +75,7 @@ Underneath the grid is a button, which if clicked on, will reset the grid, score
 
 ### Features Left to Implement
 - In the event of a draw, you could present the users with tie break muiltiple choice questions based on a marine theme, such as "What type of fish was Nemo?"
+- Add some music/sound effects
 
 ## Design
 
@@ -154,9 +154,10 @@ The following metrics were returned:
 - The most complex function has a cyclomatic complexity value of 5 while the median is 1.
 
 ### Solved Bugs
-I found the following issues during testing. 
+I asked four other people to test the game fully but none found any issues, other than one person's suggestion that I add music and/or sound effects.  However, I found the following issues during testing:
 
 - If you click on the same card twice, it alerts you that there is a match. 
+
 - After clicking on two cards, it is possible to carry on clicking on other cards. 
 
 ### Unfixed Bugs
@@ -266,8 +267,6 @@ To test the site, I followed these steps:
 | Result:   | The feature responded as expected.|
 | Fix:      | No fix needed.|
 
-
-
 ## Deployment 
 
 GitHub Pages was used for deployment of the website directly from the GitHub repository by following these steps: 
@@ -295,3 +294,18 @@ To fork the repository:
 - Log in to GitHub
 - Locate the repository
 - Click on the "Fork" button at the top
+
+## Credits
+
+### Code Used
+- Guidance on how to flip a card (https://www.w3schools.com/howto/howto_css_flip_card.asp)
+- Love Maths Walkthrough Project
+- Fisher-Yates Shuffle Algorithm to shuffle the cards array (https://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array)
+- Guidance on how to get the current player (https://github.com/adriane26/theGame/blob/master/memory.js)
+
+### Content
+- Instructions on how to clone and fork on GitHub was taken from Kera Cudmore's README (https://github.com/kera-cudmore/Bully-Book-Club/blob/main/README.md)
+
+## Acknowledgements
+
+I would like to acknowledge Ed from the Code Institute's Tutor Support for helping me solve some of the issues I faced. 
