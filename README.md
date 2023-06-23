@@ -132,7 +132,7 @@ This website was built with HTML, CSS and JavaScript.
 Chrome Developer Tools were used throughout the course of development, the console was particularly useful when debugging the code.
 
 ### Validator Testing
-[W3C HTML Validation](https://github.com/MichelleBritton/under-the-sea/blob/main/TESTING.md/##w3c-validator)
+[W3C HTML Validation](https://github.com/MichelleBritton/under-the-sea/blob/main/TESTING.md/#w3c-validator)
 
 [Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmichellebritton.github.io%2Funder-the-sea%2Fassets%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
