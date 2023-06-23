@@ -156,8 +156,8 @@ The following metrics were returned:
 ### Solved Bugs
 I found the following issues during testing. 
 
-- If you click on the same card twice, it alerts you that there is a match. I fixed this by adding a class of "stopClick" to cards clicked on.  A disableClick function was then created which removes the click event listener for elements with a class name of "stopClick".  Once the cards have been checked for a match, the class is removed and the flipCards function is called, so that the click event listeners are recreated.
-- After clicking on two cards, it is possible to carry on clicking on other cards. I fixed this by creating a variable called isPlaying initially set to true. In the flip function, a check is made to see if the variable is false and if it is then exit the function. Once two cards have been clicked the variable is set to false.  The variable is then reset to true after the cards have been checked for a match.
+- If you click on the same card twice, it alerts you that there is a match. 
+- After clicking on two cards, it is possible to carry on clicking on other cards. 
 
 ### Unfixed Bugs
 No unfixed bugs.
