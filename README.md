@@ -149,16 +149,7 @@ I asked four other people to test the game fully but none found any issues, othe
 No unfixed bugs.
 
 ### Lighthouse
-In order to test performance, accessibility, best practices and SEO, I used Lighthouse within the Chrome Developer Tools. 
-
-- Initial and final testing for Desktop
-![Screenshot of the Lighthouse Desktop](documentation/screenshots/screenshot-lighthouse-d.png)
-
-- Initial and final testing for Mobile
-![Screenshot of the Lighthouse Mobile](documentation/screenshots/screenshot-lighthouse-m.png)
-
-- Suggestions:
-Serve images in next-gen formats such as WebP and AVIF which means faster downloads and less data consumption. I have converted images to WebP format using Birme.
+In order to test performance, accessibility, best practices and SEO, I used Lighthouse within the Chrome Developer Tools. [Lighthouse](https://github.com/MichelleBritton/under-the-sea/blob/main/TESTING.md/#lighthouse)
 
 ### Full Testing
 

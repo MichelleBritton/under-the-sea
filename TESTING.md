@@ -33,3 +33,14 @@ The following metrics were returned:
 - Function with the largest signature take 1 arguments, while the median is 0.
 - Largest function has 16 statements in it, while the median is 3.
 - The most complex function has a cyclomatic complexity value of 5 while the median is 1.
+
+### Lighthouse
+
+- Initial and final testing for Desktop
+![Screenshot of the Lighthouse Desktop](documentation/screenshots/screenshot-lighthouse-d.png)
+
+- Initial and final testing for Mobile
+![Screenshot of the Lighthouse Mobile](documentation/screenshots/screenshot-lighthouse-m.png)
+
+- Suggestions:
+Serve images in next-gen formats such as WebP and AVIF which means faster downloads and less data consumption. I have converted images to WebP format using Birme.
