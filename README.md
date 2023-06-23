@@ -126,7 +126,7 @@ This website was built with HTML, CSS and JavaScript.
 - [Jigsaw](https://jigsaw.w3.org/css-validator/) - for validating CSS
 - [JSHint](https://jshint.com/) - for validating JavaScript
 - [Browserstack](https://www.browserstack.com/) - for cross browser testing
-- [Birme] - Convert images to WebP format
+- [Birme](https://www.birme.net/?no_resize=true&image_format=webp) - Convert images to WebP format
 
 ## Testing
 Chrome Developer Tools were used throughout the course of development, the console was particularly useful when debugging the code.
