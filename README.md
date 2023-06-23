@@ -95,9 +95,9 @@ Images used throughout the site were purchased from [iStock](https://www.istockp
 
 A wireframe was created using the [Figma website](https://www.figma.com/).
 
-[Under the Sea wireframe](https://www.figma.com/proto/RlWv7VijrgxyrQ0Vkw2zgw/Under-the-Sea?type=design&node-id=19-84&scaling=min-zoom&page-id=14%3A2&starting-point-node-id=19%3A84)
+[Under the Sea wireframe](https://www.figma.com/proto/RlWv7VijrgxyrQ0Vkw2zgw/Under-the-Sea?type=design&node-id=19-84&scaling=min-zoom&page-id=14%3A2&starting-point-node-id=19%3A84&mode=design)
 
-[Under the Sea Mobile version wireframe](https://www.figma.com/file/RlWv7VijrgxyrQ0Vkw2zgw/Under-the-Sea?type=design&node-id=48%3A3&mode=design&t=w8C3B1w220gIYSox-1)
+[Under the Sea Mobile version wireframe](https://www.figma.com/proto/RlWv7VijrgxyrQ0Vkw2zgw/Under-the-Sea?type=design&node-id=48-3&scaling=min-zoom&page-id=14%3A2&starting-point-node-id=48%3A3&mode=design)
 
 ### Accessibility 
 
