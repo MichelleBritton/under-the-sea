@@ -67,7 +67,7 @@ h3 {
 
 /* Body */
 body {
-	background: url('../images/bg.png') no-repeat;
+	background: url('../images/bg.webp') no-repeat;
 	background-size: cover;
 	min-height: 100vh;
 	height: 100%;
@@ -311,7 +311,7 @@ button:hover {
 		font-size: 110%;
 	}
 	#welcome-panel { 
-		background: url('../images/instructions-bg.png') no-repeat;
+		background: url('../images/instructions-bg.webp') no-repeat;
 		background-size: 100%, 100%;
 		padding: 5% 8% 10%;
 		width: 95%;
