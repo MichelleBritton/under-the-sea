@@ -220,7 +220,7 @@ I used BrowserStack to fully test the website using a number of browsers, operat
 - Mac Sierra - Opera 89
 - Mac Sierra - Edge 103
 
-To test the site, I followed the following steps:
+To test the site, I followed these steps:
 - Resize the browser to ensure that the site is responsive on multiple screen sizes.
 - Test each feature. 
 

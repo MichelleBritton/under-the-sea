@@ -114,6 +114,7 @@ input {
 button {
 	background: #63b08c;
 	border-radius: 20px;
+	clear: both;
 	cursor: pointer;
 	font: 600 130% 'Atma', cursive;
 	padding: 5px 30px;
