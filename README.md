@@ -95,9 +95,14 @@ Images used throughout the site were purchased from [iStock](https://www.istockp
 
 A wireframe was created using the [Figma website](https://www.figma.com/).
 
-[Under the Sea wireframe](https://www.figma.com/proto/RlWv7VijrgxyrQ0Vkw2zgw/Under-the-Sea?type=design&node-id=19-84&scaling=min-zoom&page-id=14%3A2&starting-point-node-id=19%3A84&mode=design)
+Screenshots of Desktop Version
+![Screenshot of the initial page](documentation/screenshots/screenshot-wireframe-1.png)
+![Screenshot of the game area](documentation/screenshots/screenshot-wireframe-2.png)
+![Screenshot of the game area with card flipped over](documentation/screenshots/screenshot-wireframe-3.png)
 
-[Under the Sea Mobile version wireframe](https://www.figma.com/proto/RlWv7VijrgxyrQ0Vkw2zgw/Under-the-Sea?type=design&node-id=48-3&scaling=min-zoom&page-id=14%3A2&starting-point-node-id=48%3A3&mode=design)
+Screenshots of Mobile Version
+![Screenshot of the mobile initial page](documentation/screenshots/screenshot-wireframe-4.png)
+![Screenshot of the mobile game area](documentation/screenshots/screenshot-wireframe-5.png)
 
 ### Accessibility 
 
