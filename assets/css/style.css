@@ -211,7 +211,7 @@ button:hover {
 	right: 1.5%;
 	transform: scale(1);
 	text-align: center;
-	top: 80px;
+	top: 50px;
 	transform: scale(1);
 	transition: all 6s ease-in;
 	transition-delay: 1s;
@@ -236,7 +236,7 @@ button:hover {
 	position: absolute;
 	transform: scale(1);
 	text-align: center;
-	top: 90px;
+	top: 60px;
 	transform: scale(1);
 	transition: all 6s ease-in;
 	transition-delay: 1s;
