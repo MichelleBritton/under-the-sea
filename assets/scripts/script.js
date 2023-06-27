@@ -131,6 +131,7 @@ function shuffle(a) {
 function createGrid() {
 	let html = `<div class="cards-container">`;
 	let closingHtml = `</div>`;
+	let result;
 
 	for (let card of cards) {
 		let item = `
@@ -145,7 +146,7 @@ function createGrid() {
 				</div>
 			</div>
 		`;
-		var result = html += item;
+		result = html += item;
 	}
 	return result + closingHtml;
 }

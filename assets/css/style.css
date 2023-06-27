@@ -229,7 +229,7 @@ button:hover {
 	border: 1px solid #fff;
 	border-radius: 20px;
 	color: #3d6892;
-    font: 600 80% 'Atma', cursive;
+	font: 600 80% 'Atma', cursive;
 	left: 1.5%;
 	opacity: 1;
 	padding: 2% 0;
@@ -257,7 +257,7 @@ button:hover {
 	background: url("../images/star.png") no-repeat;
 	background-size: contain;
 	color: #fff;
-    font: 600 150% 'Atma', cursive;
+	font: 600 150% 'Atma', cursive;
 	left: 50vw;
 	height: 306px;
 	padding: 120px 30px;
