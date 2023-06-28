@@ -89,6 +89,8 @@ I chose the theme as I thought the bright colours would be attractive to young c
 
 The fonts used were imported from Google Fonts. The main font used throughout the site is Atma, whilst Raleway has been used for the paragraphs contained within the Welcome Panel
 
+![Fonts](documentation/screenshots/fonts.png)
+
 ### Imagery
 
 Images used throughout the site were purchased from [iStock](https://www.istockphoto.com/).
