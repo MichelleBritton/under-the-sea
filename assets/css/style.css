@@ -132,7 +132,7 @@ button:hover,
 	display: inline-block;
 	margin-top: 80px;
 }
-p.reduce-margin {
+p#reduce-margin {
 	width: 60%;
 }
 
