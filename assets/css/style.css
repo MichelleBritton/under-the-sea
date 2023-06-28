@@ -114,16 +114,21 @@ input {
 .clear {
 	clear: both;
 }
-button {
+button,
+.link {
 	background: #63b08c;
 	border-radius: 20px;
 	cursor: pointer;
 	font: 600 130% 'Atma', cursive;
 	padding: 5px 30px;
 }
-button:hover {
+button:hover,
+.link:hover {
 	background: #3d6892;
 	color: #f5df8c;
+}
+.link {
+	margin-top: 50px;
 }
 
 /* Grid */
@@ -444,7 +449,8 @@ button:hover {
 		margin: 0 50px 0 10px;
 		padding: 10px;
 	}
-	button {
+	button,
+	.link {
 		font-size: 180%;
 		padding: 10px 30px;
 	}
