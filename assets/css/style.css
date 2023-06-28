@@ -133,6 +133,7 @@ button:hover,
 	margin-top: 80px;
 }
 p#reduce-margin {
+	margin: 0 auto;
 	width: 60%;
 }
 
