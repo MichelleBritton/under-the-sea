@@ -132,6 +132,9 @@ button:hover,
 	display: inline-block;
 	margin-top: 80px;
 }
+p.reduce-margin {
+	width: 60%;
+}
 
 /* Grid */
 #grid {
