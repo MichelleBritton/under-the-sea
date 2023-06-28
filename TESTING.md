@@ -26,12 +26,7 @@ No errors were found when passing through the official Jigsaw validator.
 
 ### [JavaScript Validator](https://jshint.com/)
 No errors were found when passing through the official Jshint validator.
-
-The following metrics were returned: 
-- There are 26 functions in this file.
-- Function with the largest signature take 1 arguments, while the median is 0.
-- Largest function has 16 statements in it, while the median is 3.
-- The most complex function has a cyclomatic complexity value of 5 while the median is 1.
+![Screenshot of the JS validation](documentation/screenshots/screenshot-js-valid.png)
 
 ### Lighthouse
 
