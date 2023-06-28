@@ -2,11 +2,11 @@
 const playerOneHtml = document.getElementById("player-one-score");
 const playerTwoHtml = document.getElementById("player-two-score");
 const message = document.getElementById("popup");
-const player = document.getElementById("player");
-let firstPlayer;
-let secondPlayer;
-let firstPlayerName;
-let secondPlayerName;
+const currentPlayer = document.getElementById("player");
+let inputBoxOne;
+let inputBoxTwo;
+let nameOne;
+let nameTwo;
 let playerOneScore = 0;
 let playerTwoScore = 0;
 let playerId;
@@ -35,21 +35,21 @@ document.addEventListener("DOMContentLoaded", function() {
  * Ensure that both fields are filled out and assign names to the scoreboard
  */
 function validateInput() {
-	firstPlayer = document.getElementById('player-one').value;
-	secondPlayer = document.getElementById('player-two').value;
+	inputBoxOne = document.getElementById('player-one').value;
+	inputBoxTwo = document.getElementById('player-two').value;
 
-	if (firstPlayer === "" || secondPlayer === "") { 		
+	if (inputBoxOne === "" || inputBoxTwo === "") { 		
 		alert("Please fill in both fields");
 		return false;
 	} else {
- 		firstPlayerName = document.getElementById('player-one-name');
- 		secondPlayerName = document.getElementById('player-two-name');
+		nameOne = document.getElementById('player-one-name');
+ 		nameTwo = document.getElementById('player-two-name');
 
- 		firstPlayerName.innerHTML = firstPlayer;
- 		secondPlayerName.innerHTML = secondPlayer;
+ 		nameOne.innerHTML = inputBoxOne;
+ 		nameTwo.innerHTML = inputBoxTwo;
 
 		// Add the name to the Player Board
-		player.innerHTML = firstPlayer;
+		currentPlayer.innerHTML = inputBoxOne;
 	}
 }
 
@@ -200,12 +200,12 @@ function getCurrentPlayer() {
 	if (counter %2 === 0) {
 		playerId = 1;
 		setTimeout(function() {
-			player.innerHTML = firstPlayer;
+			currentPlayer.innerHTML = inputBoxOne;
 		}, 1000);		
 	} else {
 		playerId = 2;
 		setTimeout(function() {
-			player.innerHTML = secondPlayer;
+			currentPlayer.innerHTML = inputBoxTwo;
 		}, 1000);	
 	}
 	return;
@@ -331,13 +331,13 @@ function checkWinner() {
 	if (matchedCards.length === 20){
 		if (playerOneScore > playerTwoScore) {
 			message.classList.remove("hide");
-			message.innerHTML = `${firstPlayerName.innerHTML}<br>is the winner!`;	
+			message.innerHTML = `${nameOne.innerHTML}<br>is the winner!`;	
 			setTimeout(function() {
 				message.classList.add("hide");
 			}, 3000);		
 		} else if (playerOneScore < playerTwoScore) {
 			message.classList.remove("hide");
-			message.innerHTML = `${secondPlayerName.innerHTML}<br>is the winner!`;	
+			message.innerHTML = `${nameTwo.innerHTML}<br>is the winner!`;	
 			setTimeout(function() {
 				message.classList.add("hide");
 			}, 3000);		
