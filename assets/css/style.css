@@ -128,7 +128,9 @@ button:hover,
 	color: #f5df8c;
 }
 .link {
-	margin-top: 50px;
+	color: #000;
+	display: inline-block;
+	margin-top: 80px;
 }
 
 /* Grid */
