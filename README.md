@@ -83,6 +83,8 @@ Underneath the grid is a button, which if clicked on, will reset the grid, score
 
 I chose the theme as I thought the bright colours would be attractive to young children, and if they have seen the film "Finding Nemo" they may find it a little more interesting. The colours used throughout the site were chosen as they match the colours contained within the background image.
 
+![Colour Palette](documentation/screenshots/colour-palette.png)
+
 ### Typography
 
 The fonts used were imported from Google Fonts. The main font used throughout the site is Atma, whilst Raleway has been used for the paragraphs contained within the Welcome Panel
