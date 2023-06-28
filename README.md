@@ -29,6 +29,7 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
     - [Solved Bugs](#solved-bugs)
     - [Unfixed Bugs](#unfixed-bugs)
     - [Lighthouse](#lighthouse)
+    - [WAVE](#wave)
     - [Full Testing](#full-testing)
 - [Deployment](#deployment) 
 - [Credits](#credits)
@@ -133,6 +134,7 @@ This website was built with HTML, CSS and JavaScript.
 - [Shields](https://shields.io/) - to generate badges for inclusion in the README field
 - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - for testing and debugging the website
 - [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) - for accessibility and performance reporting
+- [WAVE](https://wave.webaim.org/) - for further accessibility testing
 - [The W3C Markup Validation Service](https://validator.w3.org/) - for validating HTML 
 - [Jigsaw](https://jigsaw.w3.org/css-validator/) - for validating CSS
 - [JSHint](https://jshint.com/) - for validating JavaScript
@@ -163,6 +165,9 @@ No unfixed bugs.
 
 ### Lighthouse
 In order to test performance, accessibility, best practices and SEO, I used Lighthouse within the Chrome Developer Tools. [View results of Lighthouse testing](https://github.com/MichelleBritton/under-the-sea/blob/main/TESTING.md/#lighthouse)
+
+### WAVE
+In order to further test accessibility, I used WAVE. [View results of WAVE testing](https://github.com/MichelleBritton/under-the-sea/blob/main/TESTING.md/#wave)
 
 ### Full Testing
 

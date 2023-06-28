@@ -9,6 +9,7 @@ Visit the deployed site: [Under the Sea](https://michellebritton.github.io/under
     - [Jigsaw CSS Validator](#jigsaw-css-validator)
     - [JavaScript Validator](#javascript-validator)
     - [Lighthouse](#lighthouse)
+    - [WAVE](#wave)
 
 - [MANUAL TESTING](#manual-testing)
     - [Full List of Tested Browsers](#full-testing-list)
@@ -38,6 +39,9 @@ No errors were found when passing through the official Jshint validator.
 
 - Suggestions:
 Serve images in next-gen formats such as WebP and AVIF which means faster downloads and less data consumption. I have converted images to WebP format using Birme.
+
+### WAVE
+![Screenshot of WAVE results](documentation/screenshots/screenshot-wave.png)
 
 ## MANUAL TESTING
 
