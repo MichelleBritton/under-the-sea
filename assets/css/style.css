@@ -334,6 +334,9 @@ button:hover,
 		float: none;
 		width: auto;
 	}
+	.clear {
+		display: none;
+	}
 	input {
 		float: none;
 		margin: 0 10px 0 10px;
