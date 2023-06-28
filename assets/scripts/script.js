@@ -35,9 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
  * Ensure that both fields are filled out and assign names to the scoreboard
  */
 function validateInput() {
+	// Retrive values from input boxes
 	inputBoxOne = document.getElementById('player-one').value;
 	inputBoxTwo = document.getElementById('player-two').value;
 
+	// Check whether both fields have been filled in
 	if (inputBoxOne === "" || inputBoxTwo === "") { 		
 		alert("Please fill in both fields");
 		return false;
@@ -45,6 +47,7 @@ function validateInput() {
 		nameOne = document.getElementById('player-one-name');
  		nameTwo = document.getElementById('player-two-name');
 
+		// Add the values from the input boxes to the Score Board
  		nameOne.innerHTML = inputBoxOne;
  		nameTwo.innerHTML = inputBoxTwo;
 
