@@ -247,7 +247,7 @@ function flipCards() {
 }	
 
 /**
- * Remove event listener from cards currently enabled to prevent a false match
+ * Remove event listener from cards currently enabled to prevent doublec clicking resulting in a false match
  */
 function disableClick() {
 	const doubleClicks = document.getElementsByClassName("stopClick");
@@ -316,12 +316,23 @@ function matchCards() {
 		}
 	}, 400);
 
+	// Increment the counter and isPlaying
+	counter ++;
+	isPlaying = true;
+
+	// Carry on playing
+	resumePlay();
+}
+
+/**
+ * Reset cardClicks, empty the pickedCards array, get the current player,
+ * reset the isPlaying variable and return back to the flipCards function to resume playing the game.
+ */
+function resumePlay () {
 	// Reset
 	cardClicks = 0;
-	pickedCards = [];
-	counter ++;
-	getCurrentPlayer();
-	isPlaying = true;
+	pickedCards = [];	
+	getCurrentPlayer();	
 	// Return to flipCards to re-enable click listeners
 	flipCards();	
 }
@@ -369,15 +380,14 @@ function resetGame (event) {
 
 	// Create a new grid
 	addGrid();
-	
-	//Reset array, counter, player and score
-	pickedCards = [];
-	cardClicks = 0;
+
+	// Reset the counter 
 	counter = 0;
-	getCurrentPlayer();
+
+	// Reset the score
 	resetScore();
 
 	// Start playing again
-	flipCards();	
+	resumePlay();
 	return;
 }
