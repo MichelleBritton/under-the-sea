@@ -156,6 +156,8 @@ I asked four other people to test the game fully but none found any issues, othe
 
 - After clicking on two cards, it is possible to carry on clicking on other cards. 
 
+[An explanation of how the bugs were fixed can be found here](https://github.com/MichelleBritton/under-the-sea/blob/main/TESTING.md/#full-testing-results)
+
 ### Unfixed Bugs
 No unfixed bugs.
 
