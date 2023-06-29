@@ -1,6 +1,6 @@
 # Portfolio Project 2 - Under the Sea Memory Game
 
-The Under the Sea Memory Game is an interactive game for two players. The purpose of the game is to beat your opponent by matching the most pairs of cards. The game is targeted towards young children, as it is simple to follow and encourages them to use their memory to win, although can be enjoyed by people of any age! 
+The Under the Sea Memory Game is an interactive game for two players. The purpose of the game is to beat your opponent by matching the most pairs of cards. The game is targeted towards young children, as it is simple to follow and encourages them to use their memory to win, although it can be enjoyed by people of any age! 
 
 It has been built using HTML, CSS and JavaScript and is responsively designed allowing users to play it on a range of devices.
 
