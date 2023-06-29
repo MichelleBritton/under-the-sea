@@ -12,6 +12,9 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
 
 ## CONTENTS
 
+- [User Experience](#user-experience)
+    - [Target Audience](#target-audience)
+    - [User Stories](#user-stories)
 - [Features](#features)
     - [Existing Features](#existing-features)
     - [Features Left to Implement](#features-left-to-implement)
@@ -36,6 +39,26 @@ It has been built using HTML, CSS and JavaScript and is responsively designed al
     - [Code Used](#code-used)
     - [Content](#content) 
 - [Acknowledgments](#acknowledgements)
+
+## User Experience
+### Target Audience
+The target audience for this site would typically be anyone from the age of 5 and up, perhaps with the assistance of a parent for the younger children in helping them to understand how to play initially.
+
+### User Stories
+
+As a child user: 
+- I want to be able to play a game that is fun.
+- I want to play a game that has a fun and colourful theme. 
+- I want to be able to play a game that I can easily understand, either on my own or with guidance from my parents.
+- I want to play a game that I can play with a friend.
+- I want a game that I can play on my parents' phone or tablet.
+- I want a game that tell's me when it is my turn to play. 
+- I want a game that shows me if I am winning.
+
+As a parent with a child:
+- I want a game that is easy for my child to understand.
+- I want a game that I can play with my child. 
+- I want a game that can help focus my child's mind.
 
 ## Features
 ### Existing Features
