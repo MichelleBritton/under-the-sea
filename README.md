@@ -52,7 +52,7 @@ As a child user:
 - I want to be able to play a game that I can easily understand, either on my own or with guidance from my parents.
 - I want to play a game that I can play with a friend.
 - I want a game that I can play on my parents' phone or tablet.
-- I want a game that tell's me when it is my turn to play. 
+- I want a game that tells me when it is my turn to play. 
 - I want a game that shows me if I am winning.
 
 As a parent with a child:
